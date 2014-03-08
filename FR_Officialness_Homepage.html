@@ -196,8 +196,19 @@
 
     <link href="/stylesheets/bootstrap-tour-standalone.min.css" media="screen" rel="stylesheet" type="text/css" />
     <script src="/javascripts/vendor/bootstrap-tour-standalone.min.js"></script>
-    <script src="/javascripts/tour.js" type="text/javascript"></script>
+    <script src="/javascripts/tour-home.js" type="text/javascript"></script>
   </head>
+
+  <div class="navbar navbar-default navbar-fixed-top" style="background-color:#2c3e50;">
+    <div class="container-fluid">
+        <span style="color:#ecf0f1;" class="btn">Home</span>
+        <a class="btn" href="/FR_Officialness_Document_Page.html">Document Page</a>
+        <a class="btn" href="/FR_Officialness_Public_Inspection.html">Public Inspection Page</a>
+        <a class="btn" id="start-tour-button"  href="#">Start Tour</a>
+        <a class="btn" style="display:none"  id="restart-tour-button"  href="#">Restart Tour</a>
+    </div>
+    </div>
+  </div>
 
   <body id="my_fr2">
     <script type="text/javascript">document.getElementsByTagName('body')[0].className+=' has_js'</script>
@@ -2085,7 +2096,9 @@
         <li><a href="" class="link">1 Presidential Document</a></li>
         <li><strong>355</strong> Pages</li>
         <li class="right">
-          <i class="icon-fr2 icon-fr2-clipboard public-inspection"></i>
+          <span id="tour-1" style="position:absolute;">&nbsp</span>
+          <i class="icon-fr2 icon-fr2-clipboard public-inspection">
+          </i>
           <a href=""
             class="link public-inspection-toggle toggle"
             data-toggle-target="#pi-metadata-bar"
@@ -2110,7 +2123,9 @@
       <div class="row">
         <div class="col-md-6">
           <div class="description">
-            <span class="icon-fr2 icon-fr2-stop-hand"></span>
+            <span id="tour-2" style="position:absolute;">&nbsp</span>
+            <span class="icon-fr2 icon-fr2-stop-hand">
+            </span>
             <p>
               The <a href="">Public Inspection page</a> on FederalRegister.gov offers a
               preview of documents scheduled to appear in the next day's
@@ -2916,7 +2931,9 @@
 
       <div class="row" id="home-aid-box">
   <div classs="col-md-12">
-    <div class="fr-box fr-box-reader-aid "><div class="fr-seal-block fr-seal-block-header"><div class="fr-seal-content"><h6>Reader Aids</h6><div class="row fr-seal-meta"><div class="fr-seal-desc"><p>This box contains content that is intended to help the user better use FederalRegister.gov and to better understand the ecosystem that surrounds the federal rulemaking process. This box does not contian official Federal Register content and should be used accordingly.</p></div></div></div></div><div class="content-block">
+    <div class="fr-box fr-box-reader-aid ">
+    <span id="tour-3" style="position:absolute;">&nbsp</span> 
+    <div class="fr-seal-block fr-seal-block-header"><div class="fr-seal-content"><h6>Reader Aids</h6><div class="row fr-seal-meta"><div class="fr-seal-desc"><p>This box contains content that is intended to help the user better use FederalRegister.gov and to better understand the ecosystem that surrounds the federal rulemaking process. This box does not contian official Federal Register content and should be used accordingly.</p></div></div></div></div><div class="content-block">
       <div class="row">
         <div class="fr-2-3">
           <p>
@@ -2929,6 +2946,7 @@
 
         <div class="fr-1-3 fr-push">
           <p class="blog">
+            <span id="tour-4" style="position:absolute;">&nbsp</span>
             <span class="icon-fr2-quote"></span>
             Read the <a href="">Office of the Federal Register Blog</a>
           </p>

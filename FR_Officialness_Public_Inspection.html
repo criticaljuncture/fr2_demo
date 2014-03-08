@@ -199,7 +199,23 @@
     <meta content="Agency Information Collection Activities; Proposals, Submissions, and Approvals: Gravesite Reservation Survey (2 Year)" name="description" />
 
     <script src="/assets/application.js" type="text/javascript"></script>
+    <link href="/stylesheets/bootstrap-tour-standalone.min.css" media="screen" rel="stylesheet" type="text/css" />
+    <script src="/javascripts/vendor/bootstrap-tour-standalone.min.js"></script>
+    <script src="/javascripts/tour-public-inspection.js" type="text/javascript"></script>
+ 
   </head>
+
+  <div class="navbar navbar-default navbar-fixed-top" style="background-color:#2c3e50;">
+    <div class="container-fluid">
+        <a class="btn" href="/FR_Officialness_Homepage.html">Home</a>
+        <a class="btn" href="/FR_Officialness_Document_Page.html">Document Page</a>
+        <span style="color:white;" class="btn">Public Inspection Page</span>
+        <a class="btn" id="start-tour-button"  href="#">Start Tour</a>
+        <a class="btn" style="display:none"  id="restart-tour-button"  href="#">Restart Tour</a>
+    </div>
+    </div>
+  </div>
+
 
   <body id="my_fr2">
     <script type="text/javascript">document.getElementsByTagName('body')[0].className+=' has_js'</script>
@@ -2052,6 +2068,7 @@
     <div class="logo">
   <div class="hgroup public-inspection">
     <hgroup>
+      <div id="tour-1" style="position:absolute;top:150px;">&nbsp</div>
       <h1><a href="/" title="Federal Register Home">The Federal Register</a></h1>
       <h2>Public Inspection :: Tomorrow's Documents, Today</h2>
     </hgroup>
@@ -2064,14 +2081,16 @@
     <div id="main">
       
 <div class="title public-inspection">
+  <div id="tour-2" style="position: absolute;top:150px;right:30%;">&nbsp</div>
   <span>Public Inspection :: Notice</span>
+  <div id="tour-3" style="position:absolute;height: 0;">&nbsp</div>
 </div>
 
 <div id="metadata_content_area">
   <h1>Agency Information Collection Activities; Proposals, Submissions, and Approvals: Gravesite Reservation Survey (2 Year)</h1>
 
   <div class="metadata_share_bar">
-
+  <div id="tour-4" style="position:absolute;">&nbsp</div>
     <p class="metadata">
       An <span class="pi_warning">unpublished</span>
       Notice
@@ -2147,7 +2166,9 @@
 
 
   <div class="row">
-    <div class="fr-box fr-box-public-inspection "><div class="fr-seal-block fr-seal-block-header"><div class="fr-seal-content"><h6>Public Inspection Document</h6><div class="row fr-seal-meta"><div class="fr-seal-stamp"><span class="fr-stamp icon-fr2 icon-fr2-stop-hand"></span></div><div class="fr-seal-desc"><p>This box contains an unpublished Public Inspection document. Click <a href="/learn/public-inspection">here</a> to learn more about Public Inspection documents.</p></div></div></div></div><div class="content-block">
+    <div class="fr-box fr-box-public-inspection "><div class="fr-seal-block fr-seal-block-header"><div class="fr-seal-content"><h6>
+   <div id="tour-5" style="position:absolute;">&nbsp</div> 
+    Public Inspection Document</h6><div class="row fr-seal-meta"><div class="fr-seal-stamp"><span class="fr-stamp icon-fr2 icon-fr2-stop-hand"></span></div><div class="fr-seal-desc"><p>This box contains an unpublished Public Inspection document. Click <a href="/learn/public-inspection">here</a> to learn more about Public Inspection documents.</p></div></div></div></div><div class="content-block">
       <span class="icon-fr2 icon-fr2-stop-hand doc-background"></span>
 
       <div id="fulltext_content_area">
@@ -2165,8 +2186,10 @@
               <a href="missing.pdf" class="pi_warning">download the unpublished</a>
               PDF version.
           </p>
+          <span id="tour-9" style="position:absolute;">&nbsp</span>
 
           <p class="pi_notice">
+          <span id="tour-10" style="position:absolute;">&nbsp</span> 
           Although we make a concerted effort to reproduce the original document
           in full on our Public Inspection pages, in some cases graphics may not
           be displayed, and non-substantive markup language may appear alongside
@@ -2174,6 +2197,7 @@
           research, you should verify the contents of documents against a final,
           official edition of the Federal Register.
           <strong>
+            <span id="tour-11" style="position:absolute;">&nbsp</span>
             Only official editions of the Federal Register provide legal
             notice to the public and judicial notice to the courts under 44
             U.S.C. 1507.
@@ -2181,17 +2205,21 @@
           Learn more <a href="/learn/public-inspection">here</a>.
           </p>
       </div> <!-- end fulltext_content_area area -->
-</div><div class="fr-seal-block fr-seal-block-footer"><h6>Public Inspection Document</h6></div></div>  </div>
+</div><div class="fr-seal-block fr-seal-block-footer"><h6>
+<span id="tour-12" style="position:absolute;">&nbsp</span>
+Public Inspection Document</h6></div></div>  </div>
 </div>
 
       <div class="col-md-3 doc-aside doc-details">
   <div class="row">
-    <div class="fr-box fr-box-small fr-box-public-inspection-alt"><div class="fr-seal-block fr-seal-block-header"><div class="fr-seal-content"><h6>Document Details</h6><div class="row fr-seal-meta"><div class="fr-seal-desc"><p>Metadata about the Public Inspection document that appears to the left of this box.</p></div></div></div></div><div class="content-block">
+    <div class="fr-box fr-box-small fr-box-public-inspection-alt"><div class="fr-seal-block fr-seal-block-header"><div class="fr-seal-content"><h6>
+    <div id="tour-6" style="position:absolute;">&nbsp</div>
+    Document Details</h6><div class="row fr-seal-meta"><div class="fr-seal-desc"><p>Metadata about the Public Inspection document that appears to the left of this box.</p></div></div></div></div><div class="content-block">
       <dl class='metadata_list'>
         <dt>Filed at:</dt>
         <dd>02/25/2014 at 08:45 am</dd>
 
-          <dt>Scheduled Publication Date:</dt>
+          <dt><span id="tour-7" style="position:absolute;">&nbsp</span>Scheduled Publication Date:</dt>
           <dd>
             <a href="/documents/2014/02/26">Wednesday, February 26th, 2014</a>
           </dd>
@@ -2211,6 +2239,7 @@
 
           <dt>Document Number:</dt>
           <dd class="doc_number">2014-04060</dd>
+          <span id="tour-8" style="position:absolute;">&nbsp</span>
       </dl>
 </div><div class="fr-seal-block fr-seal-block-footer"><h6>Document Details</h6></div></div>  </div>
 </div>
