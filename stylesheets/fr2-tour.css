@@ -1,0 +1,40 @@
+.navbar.navbar-default {
+  background-color: #CCC;
+  border-bottom: 3px solid #FFF;
+  height: 250px;
+  padding-top: 10px;
+}
+.navbar.navbar-default .btn-wrapper {
+  margin: 0 auto;
+  width: 580px;
+  padding-bottom: 10px;
+}
+.navbar.navbar-default .description {
+  margin: 0 auto;
+  width: 700px;
+
+  line-height: 18px;
+  padding: 10px 5px;
+  border-top: 1px solid #AAA;
+}
+.navbar.navbar-default .btn {
+}
+.navbar.navbar-default .btn.current {
+  cursor: default;
+  color:#666;
+}
+.navbar.navbar-default .btn.start-tour {
+  border-radius: 6px;
+  border: 1px solid #015BA2;
+  padding: 5px;
+  color: #FFF;
+  background-color: #015BA2;
+}
+.navbar.navbar-default .btn.start-tour:hover {
+  background-color: #003f71;
+  border: 1px solid #003f71;
+}
+
+.navbar.navbar-default #restart-tour-button {
+  display: none;
+}
