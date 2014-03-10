@@ -28,12 +28,12 @@ var steps = {
     {
       element: "#tour-1",
       content: 'Header with with tagline "The Daily Journal of the United States" only used on pages containing official content.',
-      placement: "left"
+      placement: "bottom"
     },
     {
       element: "#tour-2",
       content: "Watermark seal is used only on pages containing official content.",
-      placement: "left",
+      placement: "bottom",
     },
     {
       element: "#tour-3",
@@ -85,7 +85,7 @@ var steps = {
     {
       element: "#tour-1",
       content: "Header tagline has changed to now read \"Public Inspection - Tomorrow's Documents Today\" to reinforce the nature of Public Inspection documents",
-      placement: "left"
+      placement: "bottom"
     },
     {
       element: "#tour-2",
@@ -130,7 +130,7 @@ var steps = {
     {
       element: "#tour-10",
       content: "A large section of text explaining the legal significance and appropriate usage of Public Inspection documents is now present.  Additionally there is a link to a page where the user can learn in greater depth.",
-      placement: "left"
+      placement: "top"
     },
     {
       element: "#tour-11",
