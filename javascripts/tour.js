@@ -162,6 +162,7 @@ $(document).ready(function() {
   });
 
   $('#start-tour-button').on('click', function() {
+    localStorage["tour_current_step"] = 0;
     tour = tourInit( $(this).data('steps') );
     tour.init().start(true).goTo(0);
     $(this).fadeOut();
@@ -169,6 +170,7 @@ $(document).ready(function() {
   });
 
   $('#restart-tour-button').on('click', function() {
+    localStorage["tour_current_step"] = 0;
     tour.start(true).goTo(0);
   });
 });
