@@ -1,1 +1,404 @@
-#main ul.bullets li{zoom:1}.title_bar .small_stack{display:-moz-inline-box;-moz-box-orient:vertical;display:inline-block;vertical-align:middle;*display:inline;*vertical-align:auto;margin-right:0;zoom:1}.footer{margin-top:1em}.button.format{padding:0 0 0 25px}#navigation .dropdown{position:relative;width:110px}#navigation .dropdown .arrow{position:absolute;right:2px;top:2px}#navigation .dropdown.nav_sections{width:113px}#navigation .dropdown.nav_browse{width:112px}#navigation .dropdown.nav_policy{width:92px}#navigation .dropdown.nav_learn{width:92px}#navigation .dropdown.nav_blog{width:78px}#navigation #term{border:0;padding:2px 0 0 0;outline:none}.home #popular.with_icon .header_with_icon{margin-bottom:.5em}#special.home #popular .header_with_icon{height:40px}#slideshow .stats li span{zoom:1}#current_issue.error p{top:7px}#comments-closing-opening .header-nav .tabs-nav{margin-left:10px}#comments-closing-opening .header-nav .tabs-nav li{display:block;float:left}.section.whats_hot ol{margin-left:15px}.citation_box li{zoom:1}.button{zoom:1}#font_controls h1{margin-right:.5em}.timeline .timeline_item.lastchild{margin-right:0}#search .tabs li{display:inline}#search .search_bar{*padding-bottom:0}#search .active_filter_list li{border-top-width:4px}#search .pagination{margin-bottom:2em;padding-bottom:2px}#header #search_bar .search_btn,#conditions_submit,#blog-search-submit{line-height:0}.filters .actions li{zoom:1}#search li.location input.submit{line-height:1}.result_set.events .results .actions,.result_set.events .results > li:hover .actions{filter:none}.result_set.events .results .actions a{display:block}#citations .search_bar{margin-bottom:1em}.pages,#toggle_advanced{width:150px}.formtastic fieldset{position:relative}.formtastic fieldset legend{position:absolute;top:0;left:0}.formtastic fieldset ol,.formtastic .show_labels .check_boxes ol,.formtastic .bsmContainer{margin-left:17em}.formtastic .show_labels ol,.formtastic .buttons ol{margin-left:0}#main .formtastic .string{clear:both}#main .formtastic .exact_date,#main .formtastic .exact_year,#main .formtastic .exact_year select,#main .formtastic .zip select{display:inline;float:none;margin:0}#main .range_start{margin-left:0}.bsmListItemLabel,.bsmListItem .remove{float:left}.bsmListItem .remove{margin-top:3px}.formtastic .advanced #conditions_submit{padding:0;text-align:center}.formtastic .date_options .date{display:inline;float:none}.formtastic .show_labels .docket{display:block}#main .formtastic .advanced .date_options .select{clear:both;display:block}#main .formtastic .advanced .date_options .select select{margin-left:0}.has_js #main .formtastic .advanced .date_options .select select{margin-left:8.5em}div.actions ul{display:inline}.formtastic .date_options .range{float:left}#wordpress .meta{margin-top:1em;margin-bottom:0}#wordpress .blog_post_list .article{padding-bottom:0}#wordpress .meta_actions ul ul,#wordpress .meta_actions li{zoom:1}#wordpress .meta_actions li.comments span{top:0}#emails #entry_email_send_me_a_copy{border:0}#modal.subscribe .icons li{border:none;margin-bottom:0;padding-bottom:0}#modal.subscribe .icons .email,#subscriptions .icons .email{width:350px}.wf-active #sections a.subscription{top:-1px}.wf-active #canned_searches a.subscription{top:-6px}#frequency-header{width:140px}ul#frequency-spark-lines{width:789px}
+/* TODO test this thoroughly */
+/* line 4, ../../app/stylesheets/ie.scss */
+#main ul.bullets li {
+  zoom: 1;
+}
+
+/* line 8, ../../app/stylesheets/ie.scss */
+.title_bar .small_stack {
+  display: -moz-inline-box;
+  -moz-box-orient: vertical;
+  display: inline-block;
+  vertical-align: middle;
+  *display: inline;
+  *vertical-align: auto;
+  margin-right: 0;
+  zoom: 1;
+}
+
+/* line 14, ../../app/stylesheets/ie.scss */
+.footer {
+  margin-top: 1em;
+}
+
+/* line 18, ../../app/stylesheets/ie.scss */
+.button.format {
+  padding: 0 0 0 25px;
+}
+
+/******************************
+
+NAV
+
+******************************/
+/* line 27, ../../app/stylesheets/ie.scss */
+#navigation .dropdown {
+  position: relative;
+  width: 110px;
+}
+
+/* line 31, ../../app/stylesheets/ie.scss */
+#navigation .dropdown .arrow {
+  position: absolute;
+  right: 2px;
+  top: 2px;
+}
+
+/* line 36, ../../app/stylesheets/ie.scss */
+#navigation .dropdown.nav_sections {
+  width: 113px;
+}
+
+/* line 37, ../../app/stylesheets/ie.scss */
+#navigation .dropdown.nav_browse {
+  width: 112px;
+}
+
+/* line 38, ../../app/stylesheets/ie.scss */
+#navigation .dropdown.nav_policy {
+  width: 92px;
+}
+
+/* line 39, ../../app/stylesheets/ie.scss */
+#navigation .dropdown.nav_learn {
+  width: 92px;
+}
+
+/* line 40, ../../app/stylesheets/ie.scss */
+#navigation .dropdown.nav_blog {
+  width: 78px;
+}
+
+/* line 42, ../../app/stylesheets/ie.scss */
+#navigation #term {
+  border: 0;
+  padding: 2px 0 0 0;
+  outline: none;
+}
+
+/******************************
+
+HOMEPAGE
+
+******************************/
+/* line 53, ../../app/stylesheets/ie.scss */
+.home #popular.with_icon .header_with_icon {
+  margin-bottom: .5em;
+}
+
+/* line 56, ../../app/stylesheets/ie.scss */
+#special.home #popular .header_with_icon {
+  height: 40px;
+}
+
+/* line 59, ../../app/stylesheets/ie.scss */
+#slideshow .stats li span {
+  zoom: 1;
+}
+
+/* line 62, ../../app/stylesheets/ie.scss */
+#current_issue.error p {
+  top: 7px;
+}
+
+/******************************
+
+SECTION
+
+******************************/
+/* line 72, ../../app/stylesheets/ie.scss */
+#comments-closing-opening .header-nav .tabs-nav {
+  margin-left: 10px;
+}
+
+/* line 75, ../../app/stylesheets/ie.scss */
+#comments-closing-opening .header-nav .tabs-nav li {
+  display: block;
+  float: left;
+}
+
+/* line 79, ../../app/stylesheets/ie.scss */
+.section.whats_hot ol {
+  margin-left: 15px;
+}
+
+/******************************
+
+ARTICLE
+
+******************************/
+/* line 89, ../../app/stylesheets/ie.scss */
+.citation_box li {
+  zoom: 1;
+}
+
+/* line 92, ../../app/stylesheets/ie.scss */
+.button {
+  zoom: 1;
+}
+
+/* line 95, ../../app/stylesheets/ie.scss */
+#font_controls h1 {
+  margin-right: .5em;
+}
+
+/* line 99, ../../app/stylesheets/ie.scss */
+.timeline .timeline_item.lastchild {
+  margin-right: 0;
+}
+
+/******************************
+
+SEARCH
+
+******************************/
+/* line 109, ../../app/stylesheets/ie.scss */
+#search .tabs li {
+  display: inline;
+}
+
+/* line 112, ../../app/stylesheets/ie.scss */
+#search .search_bar {
+  *padding-bottom: 0;
+  /* TODO remove hack */
+}
+
+/* TODO this is not a fix */
+/* line 117, ../../app/stylesheets/ie.scss */
+#search .active_filter_list li {
+  border-top-width: 4px;
+}
+
+/* line 120, ../../app/stylesheets/ie.scss */
+#search .pagination {
+  margin-bottom: 2em;
+  padding-bottom: 2px;
+}
+
+/* line 126, ../../app/stylesheets/ie.scss */
+#header #search_bar .search_btn,
+#conditions_submit,
+#blog-search-submit {
+  line-height: 0;
+}
+
+/* line 129, ../../app/stylesheets/ie.scss */
+.filters .actions li {
+  zoom: 1;
+}
+
+/* line 132, ../../app/stylesheets/ie.scss */
+#search li.location input.submit {
+  line-height: 1;
+}
+
+/* line 136, ../../app/stylesheets/ie.scss */
+.result_set.events .results .actions,
+.result_set.events .results > li:hover .actions {
+  filter: none;
+}
+
+/* line 139, ../../app/stylesheets/ie.scss */
+.result_set.events .results .actions a {
+  display: block;
+}
+
+/* line 142, ../../app/stylesheets/ie.scss */
+#citations .search_bar {
+  margin-bottom: 1em;
+}
+
+/* line 146, ../../app/stylesheets/ie.scss */
+.pages,
+#toggle_advanced {
+  width: 150px;
+}
+
+/******************************
+
+ADVANCED SEARCH
+
+******************************/
+/* line 156, ../../app/stylesheets/ie.scss */
+.formtastic fieldset {
+  position: relative;
+}
+
+/* line 159, ../../app/stylesheets/ie.scss */
+.formtastic fieldset legend {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+/* line 169, ../../app/stylesheets/ie.scss */
+.formtastic fieldset ol,
+.formtastic .show_labels .check_boxes ol,
+.formtastic .bsmContainer {
+  margin-left: 17em;
+}
+
+/* line 173, ../../app/stylesheets/ie.scss */
+.formtastic .show_labels ol,
+.formtastic .buttons ol {
+  margin-left: 0;
+}
+
+/* line 176, ../../app/stylesheets/ie.scss */
+#main .formtastic .string {
+  clear: both;
+}
+
+/* line 182, ../../app/stylesheets/ie.scss */
+#main .formtastic .exact_date,
+#main .formtastic .exact_year,
+#main .formtastic .exact_year select,
+#main .formtastic .zip select {
+  display: inline;
+  float: none;
+  margin: 0;
+}
+
+/* line 187, ../../app/stylesheets/ie.scss */
+#main .range_start {
+  margin-left: 0;
+}
+
+/* line 191, ../../app/stylesheets/ie.scss */
+.bsmListItemLabel,
+.bsmListItem .remove {
+  float: left;
+}
+
+/* line 194, ../../app/stylesheets/ie.scss */
+.bsmListItem .remove {
+  margin-top: 3px;
+}
+
+/* line 197, ../../app/stylesheets/ie.scss */
+.formtastic .advanced #conditions_submit {
+  padding: 0;
+  text-align: center;
+}
+
+/* line 201, ../../app/stylesheets/ie.scss */
+.formtastic .date_options .date {
+  display: inline;
+  float: none;
+}
+
+/* line 205, ../../app/stylesheets/ie.scss */
+.formtastic .show_labels .docket {
+  display: block;
+}
+
+/* line 209, ../../app/stylesheets/ie.scss */
+#main .formtastic .advanced .date_options .select {
+  clear: both;
+  display: block;
+}
+
+/* line 213, ../../app/stylesheets/ie.scss */
+#main .formtastic .advanced .date_options .select select {
+  margin-left: 0;
+}
+
+/* line 216, ../../app/stylesheets/ie.scss */
+.has_js #main .formtastic .advanced .date_options .select select {
+  margin-left: 8.5em;
+}
+
+/******************************
+
+TOPIC LIST
+
+******************************/
+/* line 226, ../../app/stylesheets/ie.scss */
+div.actions ul {
+  display: inline;
+}
+
+/* line 230, ../../app/stylesheets/ie.scss */
+.formtastic .date_options .range {
+  float: left;
+}
+
+/******************************
+
+BLOG
+
+******************************/
+/* line 240, ../../app/stylesheets/ie.scss */
+#wordpress .meta {
+  margin-top: 1em;
+  margin-bottom: 0;
+}
+
+/* line 244, ../../app/stylesheets/ie.scss */
+#wordpress .blog_post_list .article {
+  padding-bottom: 0;
+}
+
+/* line 248, ../../app/stylesheets/ie.scss */
+#wordpress .meta_actions ul ul,
+#wordpress .meta_actions li {
+  zoom: 1;
+}
+
+/* line 251, ../../app/stylesheets/ie.scss */
+#wordpress .meta_actions li.comments span {
+  top: 0;
+}
+
+/******************************
+
+EMAIL SUBS
+
+******************************/
+/* line 261, ../../app/stylesheets/ie.scss */
+#emails #entry_email_send_me_a_copy {
+  border: 0;
+}
+
+/* line 265, ../../app/stylesheets/ie.scss */
+#modal.subscribe .icons li {
+  border: none;
+  margin-bottom: 0;
+  padding-bottom: 0;
+}
+
+/* line 271, ../../app/stylesheets/ie.scss */
+#modal.subscribe .icons .email,
+#subscriptions .icons .email {
+  width: 350px;
+}
+
+/******************************
+
+SECTIONS
+
+******************************/
+/* line 281, ../../app/stylesheets/ie.scss */
+.wf-active #sections a.subscription {
+  top: -1px;
+}
+
+/******************************
+
+CANNED SEARCH SHOW
+
+******************************/
+/* line 291, ../../app/stylesheets/ie.scss */
+.wf-active #canned_searches a.subscription {
+  top: -6px;
+}
+
+/* line 294, ../../app/stylesheets/ie.scss */
+#frequency-header {
+  width: 140px;
+}
+
+/* line 297, ../../app/stylesheets/ie.scss */
+ul#frequency-spark-lines {
+  width: 789px;
+}

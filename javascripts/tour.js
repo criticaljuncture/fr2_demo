@@ -11,7 +11,7 @@ var steps = {
     {
       element: "#tour-2",
       content: "Consistent with treatment of Public Inspection elsewhere this preview area features a light pink background watermarked with the 'warning hand' icon as well as some description of Public Inspection.",
-      placement: "top",
+      placement: "bottom",
     },
     {
       element: "#tour-3",
@@ -47,37 +47,42 @@ var steps = {
     },
     {
       element: "#tour-5",
-      content: "Light blue background reinforces that the document is official and provides a container for the official document as the user scrolls down the page.",
+      content: "When a user places their mouse (hovers) over the blue Official Document header it will expand with a more detailed explanation of Official Document helping to further delineate what is an official document.",
       placement: "top"
     },
     {
       element: "#tour-6",
-      content: "Meta-data about a document that was present in the official document is preseted in a box with a similar blue color and encompassed in 'Document Detail' blocks at the top and bottom of the box",
+      content: "Light blue background reinforces that the document is official and provides a container for the official document as the user scrolls down the page.",
       placement: "top"
     },
     {
       element: "#tour-7",
-      content: "Official NARA seal is present as a water mark on the light blue background.  While light enough that it doesnt interfere with reading the document, it follows the content as the page is scrolled providing constant reinforcement that the text in the light blue area is official.",
+      content: "Meta-data about a document that was present in the official document is presented in a box with a similar blue color and encompassed in 'Document Detail' blocks at the top and bottom of the box.",
       placement: "top"
     },
     {
       element: "#tour-8",
+      content: "Official NARA seal is present as a water mark on the light blue background.  While light enough that it doesnt interfere with reading the document, it follows the content as the page is scrolled providing constant reinforcement that the text in the light blue area is official.",
+      placement: "top"
+    },
+    {
+      element: "#tour-9",
       content: "Items that are not part of the published document, such as programatically generated table of contents and the regulatory timeline have been moved to a utility bar outside of the blue official document area.  This utility bar also contains tools to aid the reader in sharing with others, commenting, printing, etc.",
       placement: "right"
     },
     {
-      element: "#tour-9",
-      content: "While denoting the type of content contained in a box, enhanced content headers will also reveal details about the source and purpose of the content in the box when a user hovers over the header",
+      element: "#tour-10",
+      content: "While denoting the type of content contained in a box, enhanced content headers will also reveal details about the source and purpose of the content in the box when a user hovers over the header.",
       placement: "top"
     },
     {
-      element: "#tour-10",
-      content: "Content from other sources that provide context or provide additional details about a documenta re present in a green box rather than tblue to make the distinction clear to the reader.",
+      element: "#tour-11",
+      content: "Content from other sources that provide context or provide additional details about a document are present in a green box rather than blue to make the distinction clear to the reader.",
       placement: "left"
     },
     {
-      element: "#tour-11",
-      content: "Official Documents are enclosed with blue 'Official Document' blocks at top and bottom to clearly delineate where an official document begins and ends",
+      element: "#tour-12",
+      content: "Official Documents are enclosed with blue 'Official Document' blocks at top and bottom to clearly delineate where an official document begins and ends.",
       placement: "bottom"
     }
   ],
@@ -110,7 +115,7 @@ var steps = {
     {
       element: "#tour-6",
       content: "Document metadata is published in a separate area in a similar pattern to how official documents are now presented but with colors reinforcing this document's status.  This header also includes a hover that gives more detail on the content contained.",
-      placement: "left"
+      placement: "top"
     },
     {
       element: "#tour-7",
@@ -135,11 +140,99 @@ var steps = {
     {
       element: "#tour-11",
       content: "A reminder of the legal definition of this content is presented in bold to remind the user of the legal status of what they are viewing",
-      placement: "left"
+      placement: "top"
     },
     {
       element: "#tour-12",
       content: "A footer is present on the document to visually reaffirm what type of content is being viewed",
+      placement: "bottom"
+    }
+  ],
+  public_inspection_toc: [
+  {
+    element: "#tour-1",
+    content: 'Header tagline has changed to now read "Public Inspection :: Tomorrrow\'s Documents Today" to reinforce the nature of Public Inspection documents.',
+    placement: "bottom"
+  },
+  {
+    element: "#tour-2",
+    content: "Official watermark seal has been removed because the page does not contain official Federal Register content.",
+    placement: "bottom"
+  },
+  {
+    element: "#tour-3",
+    content: 'Blue bar has now become red helping to visually remind the user that they are no longer on a page that contains official Federal Register content.',
+    placement: "bottom"
+  },
+  {
+    element: "#tour-4",
+    content: "The documents currently on Public Inspection page summary has a pink background to further remind the user of what they are viewing and to prevent any confusion with the page summary used for officially published documents.",
+    placement: "bottom"
+  },
+  {
+    element: "#tour-5",
+    content: "Using the same color as is used for all unofficial learn content we present the user with a brief introduction to Public Inspection with a link to learn more.",
+    placement: "top"
+  },
+  {
+    element: "#tour-6",
+    content: "A reminder of the legal definition of this content is presented in bold to remind the user of the legal status of what they are viewing.",
+    placement: "bottom"
+  },
+  {
+    element: "#tour-7",
+    content: "Clarification of calculated dates is also now present providing more clarity as to the nature of the documents on this page.",
+    placement: "top"
+  },
+  {
+    element: "#tour-8",
+    content: 'The presentation of the document contains a light pink background between the header and footer "Public Inspection Documents" blocks.  This also features the same header and footer with hover states as described on the Public Inspection document page comp.',
+    placement: "top"
+  },
+  {
+    element: "#tour-9",
+    content: "The table of contents for the documents on Public Inspection for this date is presented in red/pink to reinforce its relation to the content on this page and the status of the content it links to.  This table of contents block will scroll with the user as they move down the page not only providing increased ease of use but also a persistent reminder of the status of the content being viewed.",
+    placement: "top"
+  },
+  {
+    element: "#tour-10",
+    content: 'Publication date has been changed to now be "Scheduled Pub. Date" to better represent the nature of Public Inspection Documents.',
+    placement: "bottom"
+  }],
+  reader_aids: [
+    {
+      element: "#tour-1",
+      content: 'Header tagline has changed to now read "Reader Aids :: Insight into the FR Ecosystem" to aid in differentiating the unofficial content created to help users understand and use the Federal Register.',
+      placement: "bottom"
+    },
+    {
+      element: "#tour-2",
+      content: "Official watermark seal is not used on pages that do not contain official Federal Register content.",
+      placement: "bottom"
+    },
+    {
+      element: "#tour-3",
+      content: "The blue bar present on pages containing official content has now become a magenta bar denoting the change in legal status of the content on this page (and others like it).",
+      placement: "bottom"
+    },
+    {
+      element: "#tour-4",
+      content: "In addition to a header denoting the type of search, the background is also colored to reinforce the type of content that will be searched and returned as matches to that search.  This helps to eliminate any confusion as to the nature of any matching documents.",
+      placement: "bottom"
+    },
+    {
+      element: "#tour-5",
+      content: "Consistent with the treatment of other content types, reader aid content will be wrapped in a block denoting its type, reinforced by the appropriate color and a light magenta background behind the content itself.  This also features a hover with more details.",
+      placement: "top"
+    },
+    {
+      element: "#tour-6",
+      content: 'The legal status of the content being presented on the page is clearly marked as "unofficial".',
+      placement: "top"
+    },
+    {
+      element: "#tour-7",
+      content: "Headers clearly denote the grouping of each set of reader aid content subtly reinforcing that the content is not official",
       placement: "top"
     }
   ]

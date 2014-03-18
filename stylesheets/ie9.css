@@ -1,1 +1,42 @@
-.wf-active #sections a.subscription{top:-1px}#most-popular .title_bar{background:url('/images/icons.png?1393638771') 0 -1454px no-repeat;padding-left:31px}#most-emailed .title_bar{background:url('/images/icons.png?1393638771') 0 -1520px no-repeat;padding-left:30px}.wf-active #canned_searches a.subscription{top:-6px}ul#frequency-spark-lines{width:790px}#suggested-search-list div.rule_type{height:23px}
+/******************************
+
+SECTIONS
+
+******************************/
+/* line 6, ../../app/stylesheets/ie9.scss */
+.wf-active #sections a.subscription {
+  top: -1px;
+}
+
+/* line 10, ../../app/stylesheets/ie9.scss */
+#most-popular .title_bar {
+  background: url('/images/icons.png?1394750120') 0 -1454px no-repeat;
+  padding-left: 31px;
+}
+
+/* line 14, ../../app/stylesheets/ie9.scss */
+#most-emailed .title_bar {
+  background: url('/images/icons.png?1394750120') 0 -1520px no-repeat;
+  padding-left: 30px;
+}
+
+/******************************
+
+SUGGESTED SEARCH
+
+******************************/
+/* line 25, ../../app/stylesheets/ie9.scss */
+.wf-active #canned_searches a.subscription {
+  top: -6px;
+}
+
+/* line 28, ../../app/stylesheets/ie9.scss */
+ul#frequency-spark-lines {
+  width: 790px;
+}
+
+/* DOCUMENT ICONS */
+/* line 33, ../../app/stylesheets/ie9.scss */
+#suggested-search-list div.rule_type {
+  height: 23px;
+}

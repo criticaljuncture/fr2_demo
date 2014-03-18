@@ -1,17 +1,17 @@
 .navbar.navbar-default {
   background-color: #CCC;
   border-bottom: 3px solid #FFF;
-  height: 250px;
+  height: 200px;
   padding-top: 10px;
 }
 .navbar.navbar-default .btn-wrapper {
   margin: 0 auto;
-  width: 580px;
+  width: 800px;
   padding-bottom: 10px;
 }
 .navbar.navbar-default .description {
   margin: 0 auto;
-  width: 700px;
+  width: 800px;
 
   line-height: 18px;
   padding: 10px 5px;

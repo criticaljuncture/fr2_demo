@@ -207,13 +207,13 @@
 
   <div class="navbar navbar-default navbar-fixed-top">
     <div class="container-fluid btn-wrapper">
-      <a class="btn current" href="">Home</a>
+      <a class="btn" href="/FR_Officialness_Homepage.html">Home</a>
       <a class="btn" href="/FR_Officialness_Document_Page.html">Document Page</a>
       <a class="btn" href="/FR_Officialness_Public_Inspection.html">Public Inspection Page</a>
       <a class="btn" href="/FR_Officialness_Public_Inspection_ToC.html">Public Inspection ToC Page</a>
-      <a class="btn" href="/FR_Officialness_Reader_Aids.html">Reader Aids</a>
-      <a class="btn start-tour" id="start-tour-button"  data-steps='home' href="#">Start Tour</a>
-      <a class="btn start-tour" id="restart-tour-button"  data-steps='home' href="#">Restart Tour</a>
+      <a class="btn current" href="/FR_Officialness_Reader_Aids.html">Reader Aids</a>
+      <a class="btn start-tour" id="start-tour-button"  data-steps='reader_aids' href="#">Start Tour</a>
+      <a class="btn start-tour" id="restart-tour-button"  data-steps='reader_aids' href="#">Restart Tour</a>
     </div>
     <div class="description">
       <p>
@@ -231,7 +231,6 @@
       </p>
     </div>
   </div>
-
 
   <body id="my_fr2">
 
@@ -2083,25 +2082,28 @@
 
 
     <div class="logo">
-  <div class="hgroup official">
+  <div class="hgroup reader-aids">
+    <div id="tour-1" style="width: 30%;top: 325px;position:absolute;">&nbsp</div>
     <hgroup>
       <h1><a href="/" title="Federal Register Home">The Federal Register</a></h1>
-      <h2>The Daily Journal of the United States Government</h2>
+      <h2>Reader Aids :: Insight Into the FR Ecosystem</h2>
     </hgroup>
   </div>
 </div>
 
+
   </div>
 </div></header>
 
-      <div class="nara-background-seal" unselectable="on">
-    <div class="nara-background-seal-fade"></div>
-  </div>
-
+    
 
     <div id="main">
-      <div class="title">
-  <span>Monday, March 17th</span>
+      
+<div class="title reader-aids">
+  <span>
+  <div id="tour-2" style="width:90%;position: absolute;top:-50px;">&nbsp</div>
+  Reader Aids</span>
+  <div id="tour-3" style="left:675px;position:absolute;height: 0;">&nbsp</div>
 </div>
 
 <!-- BOOTSTRAP SCOPE START -->
@@ -2110,1518 +2112,378 @@
 
   <div class="wrapper">
     <div class="container fixed">
-      <!-- issue document metadata -->
-<div class="row">
-  <div class="fr-head-metadata-bar fr-head-metadata-bar-official">
-    <div class="col-xs-3 col-md-3 fr-head-meta-label-holder">
-      <div class="fr-head-meta-label">
-        <i class="icon-fr2-calendar-alt"></i>
-        <h4><a href="">Current Issue</a></h4>
-      </div>
-    </div>
-    <div class="col-xs-9 col-md-9 fr-head-meta-counts">
-      <ul class="inline-list">
-        <li><a href="" class="link">62 Notices</a></li>
-        <li><a href="" class="link">13 Proposed Rules</a></li>
-        <li><a href="" class="link">12 Rules</a></li>
-        <li><a href="" class="link">1 Presidential Document</a></li>
-        <li><strong>355</strong> Pages</li>
-        <li class="right">
-          <span id="tour-1" style="position:absolute;">&nbsp</span>
-          <i class="icon-fr2 icon-fr2-clipboard public-inspection"></i>
-          <a href=""
-            class="link public-inspection-toggle toggle"
-            data-toggle-target="#pi-metadata-bar"
-            data-toggle-trigger="click">
-            View Public Inspection
-          </a>
-        </li>
-      </ul>
-    </div>
-    <div class="clearfix"></div>
-  </div>
-</div>
-
-<!-- issue public inspection metadata -->
-<div id="pi-metadata-bar" class="row">
-  <div class="fr-head-metadata-bar fr-head-metadata-bar-public-inspection">
-    <div class="col-xs-3 col-md-3 fr-head-meta-label-holder">
-      <div class="fr-head-meta-label">
-        <i class="icon-fr2-clipboard"></i>
-        <h4><a href="">Public Inspection</a></h4>
-      </div>
-
-      <span class="icon-fr2 icon-fr2-stop-hand"></span>
-    </div>
-    <div class="col-xs-9 col-md-9 fr-head-meta-counts">
-      <div class="row">
-        <div class="col-xs-6 col-md-6">
-          <div class="description">
-            <p>
-              The <a href="">Public Inspection page</a> on FederalRegister.gov offers a
-              preview of documents scheduled to appear in the next day's
-              Federal Register issue. The Public Inspection page may also
-              include documents scheduled for later issues, at the request
-              of the issuing agency.
-            </p>
-            <p>
-              <a href="">Learn more about public inspection here.</a>
-            </p>
-          </div>
-        </div>
-        <div class="col-xs-6 col-md-6">
-          <ul class="fr-list with-stats">
-            <li>
-              <h5>Special Filing</h5>
-              <span>updated at 03:14PM, on Monday, March 17th, 2014</span>
-              <div class="public-inspection-list-stats">
-                <a href="#" class="link">13 documents</a> from 14 agencies
-                <div>
-                  <a href="#"><i class="icon-fr2 icon-fr2-notice rule_type with-tooltip-s" data-tooltip="Notices"></i>10</a>
-                  <a href="#"><i class="icon-fr2 icon-fr2-proposed_rule rule_type with-tooltip-s" data-tooltip="Proposed Rules"></i>2</a>
-                  <a href="#"><i class="icon-fr2 icon-fr2-rule rule_type with-tooltip-s" data-tooltip="Rules"></i>1</a>
-                </div>
-              </div>
-            </li>
-            <li>
-              <h5>Regular Filing</h5>
-              <span>updated at 08:45AM, on Monday, March 17th, 2014</span>
-              <div class="public-inspection-list-stats">
-                <a href="" class="link">106 documents</a> from 50 agencies
-                <div>
-                  <a href="#"><i class="icon-fr2 icon-fr2-notice rule_type with-tooltip-s" data-tooltip="Notices"></i>82</a>
-                  <a href="#"><i class="icon-fr2 icon-fr2-proposed_rule rule_type with-tooltip-s" data-tooltip="Proposed Rules"></i>9</a>
-                  <a href="#"><i class="icon-fr2 icon-fr2-rule rule_type with-tooltip-s" data-tooltip="Rules"></i>15</a>
-                </div>
-            </li>
-          </ul>
-        </div>
-      </div>
-
-    </div>
-
-    <div class="clearfix"></div>
-  </div>
-  <span id="tour-2" style="width:17.5%;position:absolute;">&nbsp</span>
-</div>
-
-      <div class="row">
-  <div class="embedded_search search_bar home-search-embedded">
-    <h3 class="with-icon">
-      <span class="icon-fr2-Search"></span>
-      Search All Federal Register Documents Since 1994
-    </h3>
-
-    <form action="/articles/search" class="formtastic conditions" id="entry_search_form" method="get">
-      <input id="conditions_term" class="form-control" name="conditions[term]" placeholder="Search term or citation" size="30" type="text">
-
-      <ul>
-        <li class="hidden optional" id="conditions_agency_ids_input">
-          <input id="conditions_agency_ids" name="conditions[agency_ids]" type="hidden" value="145">
-        </li>
-      </ul>
-
-      <input id="conditions_submit" name="commit" type="submit" value="Search">
-      <span id="expected_result_count"></span>
-
-      <div id="doc-type-filter">
-        <ul>
-          <li class="doc_notice first" data-filter-doc-type="notice" data-filter-doc-type-display="Notice" original-title="">
-            <div aria-hidden="true" class="icon-fr2 icon-fr2-notice"></div>
-          </li>
-          <li class="doc_proposed_rule" data-filter-doc-type="prorule" data-filter-doc-type-display="Proposed Rule" original-title="">
-            <div aria-hidden="true" class="icon-fr2 icon-fr2-proposed_rule"></div>
-          </li>
-          <li class="doc_rule " data-filter-doc-type="rule" data-filter-doc-type-display="Rule" original-title="">
-            <div aria-hidden="true" class="icon-fr2 icon-fr2-rule"></div>
-          </li>
-          <li class="doc_presdocu last" data-filter-doc-type="presdocu" data-filter-doc-type-display="Presidential Document" original-title="">
-            <div aria-hidden="true" class="icon-fr2 icon-fr2-presidential_document"></div>
-          </li>
-        </ul>
-      </div>
-
-      <li class="check_boxes optional" id="conditions_type_input"><fieldset><legend class="label"><label for="conditions_type">Document Category</label></legend><ol><li><label for="conditions_type_rule"><input name="conditions[type][]" type="hidden" value=""><input id="conditions_type_rule" name="conditions[type][]" type="checkbox" value="RULE"> Rule</label></li><li><label for="conditions_type_prorule"><input name="conditions[type][]" type="hidden" value=""><input id="conditions_type_prorule" name="conditions[type][]" type="checkbox" value="PRORULE"> Proposed Rule</label></li><li><label for="conditions_type_notice"><input name="conditions[type][]" type="hidden" value=""><input id="conditions_type_notice" name="conditions[type][]" type="checkbox" value="NOTICE"> Notice</label></li><li><label for="conditions_type_presdocu"><input name="conditions[type][]" type="hidden" value=""><input id="conditions_type_presdocu" name="conditions[type][]" type="checkbox" value="PRESDOCU"> Presidential Document</label></li></ol></fieldset></li>
-    </form>
-  </div>
-</div>
-
-      <div class="row">
-  <div class="nav-home-carousel">
-
-
-
-    <div class="col-xs-3 col-md-3 nav-wrapper">
-      <ul class="nav">
-    <li class=""
-        data-toggle-target="#home-carousel-content-money">
-      <span class="icon-fr2-Coins-dollaralt"></span>
-      Money
-    </li>
-    <li class="selected"
-        data-toggle-target="#home-carousel-content-environment">
-      <span class="icon-fr2-Eco"></span>
-      Environment
-    </li>
-    <li class=""
-        data-toggle-target="#home-carousel-content-world">
-      <span class="icon-fr2-Globe"></span>
-      World
-    </li>
-    <li class=""
-        data-toggle-target="#home-carousel-content-science">
-      <span class="icon-fr2-Lab"></span>
-      Science &amp; Technology
-    </li>
-    <li class=""
-        data-toggle-target="#home-carousel-content-business">
-      <span class="icon-fr2-Factory"></span>
-      Business &amp; Industry
-    </li>
-    <li class=""
-        data-toggle-target="#home-carousel-content-health">
-      <span class="icon-fr2-Medicine"></span>
-      Health &amp; Public Welfare
-    </li>
-</ul>
-
-    </div>
-
-    <div class="col-xs-9 col-md-9">
-      <div id="home-carousel-content-money" class="nav-content ">
+      
   <div class="row">
+    <div class="col-xs-12 col-md-12">
+      <div class="search-box reader-aids">
+  <h3 class="with-icon">
+    <span class="icon-fr2-Search">
+    </span>
+    Search Our Reader Aids
+  </h3>
 
-    <div class="col-xs-7 col-md-7 carousel-wrapper">
-      <div class="carousel-item">
-        <div>
-          <img src="https://s3.amazonaws.com/lede-photos.federalregister.gov/5590/navigation.jpg">
-        </div>
+  <p>
+    Need help with something specific? Our reader aids cover many aspects of FederalRegister.gov</p>
 
-        <ol class="carousel-indicators">
-          <li class="active"></li>
-          <li></li>
-          <li></li>
-          <li></li>
-        </ol>
+  <span id="tour-4" style="position:absolute;height:0;bottom: -.75px;width: 80%;">&nbsp</span>
+  <form action="/articles/search" class="formtastic conditions" id="entry_search_form" method="get">
+    <input id="conditions_term" class="form-control" name="conditions[term]" placeholder="Search term or phrase" size="30" type="text">
 
-        <div class="clearfix"></div>
-
-        <p>The Board of Governors of the Federal Reserve System (Board) is proposing to repeal its Regulation DD, 12 CFR part 230, which was issued to implement the Truth in Saving Act (TISA). Title X of the Dodd-Frank Wall Street Reform and Consumer Protection Act (Dodd-Frank Act) transferred rulemaking authority for a number of consumer financial protection laws, including TISA, from the Board to the Bureau of Consumer Financial Protection.</p>
-      </div>
-    </div>
-
-    <div class="col-xs-5 col-md-5 section carousel-list">
-      <h4 class="with-icon lowercase">
-        <span class="icon-fr2 icon-fr2-Coins-dollaralt"></span>
-        Suggested Searches
-        <a href="" class="more-details">view all</a>
-      </h4>
-
-      <ul class="fr-list with-stats">
-          <li>
-            <a href="">Dodd-Frank Wall Steet Reform</a>
-            <ul>
-              <li>324 documents in the last year</li>
-              <li>
-                <i class="icon-fr2-Chat"></i>
-                62 open for comment
-              </li>
-            </ul>
-          </li>
-          <li>
-            <a href="">Stock &amp; Commodities Trading</a>
-            <ul>
-              <li>506 documents in the last year</li>
-              <li>
-                <i class="icon-fr2-Chat"></i>
-                23 open for comment
-              </li>
-            </ul>
-          </li>
-          <li>
-            <a href="">Government Contracts</a>
-            <ul>
-              <li>52 documents in the last year</li>
-              <li>
-                <i class="icon-fr2-Chat"></i>
-                67 open for comment
-              </li>
-            </ul>
-          </li>
-          <li>
-            <a href="">Economic Sanctions &amp; Foreign Assets Control</a>
-            <ul>
-              <li>569 documents in the last year</li>
-              <li>
-                <i class="icon-fr2-Chat"></i>
-                35 open for comment
-              </li>
-            </ul>
-          </li>
-          <li>
-            <a href="">Information Collection Notices</a>
-            <ul>
-              <li>3884 documents in the last year</li>
-              <li>
-                <i class="icon-fr2-Chat"></i>
-                24 open for comment
-              </li>
-            </ul>
-          </li>
-      </ul>
-    </div>
-
-  </div>
+    <input id="conditions_submit" name="commit" type="submit" value="Search">
+    <span id="expected_result_count"></span>
+  </form>
 </div>
 
-      <div id="home-carousel-content-environment" class="nav-content selected">
+    </div>
+  </div>
+
   <div class="row">
+    <div class="col-xs-12 col-md-12">
+      <div class="fr-box fr-box-reader-aid ">
+      
+      <div class="fr-seal-block fr-seal-block-header"><div class="fr-seal-content">
+      
+      <span id="tour-5" style="width:10%;position:absolute;">&nbsp</span>
+      <h6>
+      Reader Aids</h6><div class="row fr-seal-meta"><div class="fr-seal-desc"><p>This box contains content that is intended to help the user better use FederalRegister.gov and to better understand the ecosystem that surrounds the federal rulemaking process. This box does not contian official Federal Register content and should be used accordingly.</p></div></div></div></div><div class="content-block simple">
+        <p>
+          <span id="tour-6" style="width: 30%;position:absolute;">&nbsp</span>
+          Use these helpful, unofficial learning articles, tutorials and videos
+          increase your understanding of the Federal Register ecosystem and
+          improve your FederalRegister.gov skills.
+        </p>
 
-    <div class="col-xs-7 col-md-7 carousel-wrapper">
-      <div class="carousel-item">
-        <div>
-          <img src="https://s3.amazonaws.com/lede-photos.federalregister.gov/5636/navigation.jpg">
-        </div>
-
-        <ol class="carousel-indicators">
-          <li class="active"></li>
-          <li></li>
-          <li></li>
-          <li></li>
-        </ol>
-
-        <div class="clearfix"></div>
-
-        <p>NMFS announces final 2014 and 2015 harvest specifications, prohibited species catch allowances, and closures for the groundfish fishery of the Bering Sea and Aleutian Islands management area (BSAI).</p>
-      </div>
-    </div>
-
-    <div class="col-xs-5 col-md-5 section carousel-list">
-      <h4 class="with-icon lowercase">
-        <span class="icon-fr2 icon-fr2-Eco"></span>
-        Suggested Searches
-        <a href="" class="more-details">view all</a>
-      </h4>
-
-      <ul class="fr-list with-stats">
-          <li>
-            <a href="">Endangered &amp; Threatened Species</a>
-            <ul>
-              <li>1009 documents in the last year</li>
-              <li>
-                <i class="icon-fr2-Chat"></i>
-                62 open for comment
-              </li>
-            </ul>
-          </li>
-          <li>
-            <a href="">Taking of Marine Mammals</a>
-            <ul>
-              <li>313 documents in the last year</li>
-              <li>
-                <i class="icon-fr2-Chat"></i>
-                23 open for comment
-              </li>
-            </ul>
-          </li>
-          <li>
-            <a href="">Fishery Management</a>
-            <ul>
-              <li>1507 documents in the last year</li>
-              <li>
-                <i class="icon-fr2-Chat"></i>
-                67 open for comment
-              </li>
-            </ul>
-          </li>
-          <li>
-            <a href="">Parks &amp; Recreation</a>
-            <ul>
-              <li>1228 documents in the last year</li>
-              <li>
-                <i class="icon-fr2-Chat"></i>
-                35 open for comment
-              </li>
-            </ul>
-          </li>
-          <li>
-            <a href="">Clean Air Act -- State Implmentation</a>
-            <ul>
-              <li>669 documents in the last year</li>
-              <li>
-                <i class="icon-fr2-Chat"></i>
-                24 open for comment
-              </li>
-            </ul>
-          </li>
-      </ul>
-    </div>
-
+        <div class="row reader-aids-index-nav">
+  <div class="col-xs-2 col-md-2">
+    <h4>On This Page</h4>
   </div>
-</div>
 
-      <div id="home-carousel-content-world" class="nav-content ">
-  <div class="row">
-
-    <div class="col-xs-7 col-md-7 carousel-wrapper">
-      <div class="carousel-item">
-        <div>
-          <img src="https://s3.amazonaws.com/lede-photos.federalregister.gov/5633/navigation.jpg">
-        </div>
-
-        <ol class="carousel-indicators">
-          <li class="active"></li>
-          <li></li>
-          <li></li>
-          <li></li>
-        </ol>
-
-        <div class="clearfix"></div>
-
-        <p>The Coast Guard is adjusting Great Lakes pilotage rates that were last amended in February 2013. The adjustments establish new base rates, and are made in accordance with a full ratemaking procedure. The Coast Guard is exercising its discretion to establish new base rates to more closely align with recent Canadian rate increases.</p>
-      </div>
-    </div>
-
-    <div class="col-xs-5 col-md-5 section carousel-list">
-      <h4 class="with-icon lowercase">
-        <span class="icon-fr2 icon-fr2-Globe"></span>
-        Suggested Searches
-        <a href="" class="more-details">view all</a>
-      </h4>
-
-      <ul class="fr-list with-stats">
-          <li>
-            <a href="">Immigration &amp; Border Control</a>
-            <ul>
-              <li>240 documents in the last year</li>
-              <li>
-                <i class="icon-fr2-Chat"></i>
-                62 open for comment
-              </li>
-            </ul>
-          </li>
-          <li>
-            <a href="">International Trade (Anti-Dumping)</a>
-            <ul>
-              <li>622 documents in the last year</li>
-              <li>
-                <i class="icon-fr2-Chat"></i>
-                23 open for comment
-              </li>
-            </ul>
-          </li>
-          <li>
-            <a href="">Cultural Objects Imported for Exhibition</a>
-            <ul>
-              <li>93 documents in the last year</li>
-              <li>
-                <i class="icon-fr2-Chat"></i>
-                67 open for comment
-              </li>
-            </ul>
-          </li>
-          <li>
-            <a href="">Controlled Exports (CCL &amp; USML)</a>
-            <ul>
-              <li>61 documents in the last year</li>
-              <li>
-                <i class="icon-fr2-Chat"></i>
-                35 open for comment
-              </li>
-            </ul>
-          </li>
-          <li>
-            <a href="">Denied Persons &amp; Specially Designated Nationals</a>
-            <ul>
-              <li>77 documents in the last year</li>
-              <li>
-                <i class="icon-fr2-Chat"></i>
-                24 open for comment
-              </li>
-            </ul>
-          </li>
-      </ul>
-    </div>
-
-  </div>
-</div>
-
-      <div id="home-carousel-content-science" class="nav-content ">
-  <div class="row">
-
-    <div class="col-xs-7 col-md-7 carousel-wrapper">
-      <div class="carousel-item">
-        <div>
-          <img src="https://s3.amazonaws.com/lede-photos.federalregister.gov/5638/navigation.jpg">
-        </div>
-
-        <ol class="carousel-indicators">
-          <li class="active"></li>
-          <li></li>
-          <li></li>
-          <li></li>
-        </ol>
-
-        <div class="clearfix"></div>
-
-        <p>This rulemaking adopts more stringent noise certification standards for helicopters that are certificated in the United States (U.S.). This rule applies to applications for a new helicopter type design. It also allows applicants to upgrade Stage 1 and Stage 2 helicopters to Stage 3 when applying for a supplemental type certificate.</p>
-      </div>
-    </div>
-
-    <div class="col-xs-5 col-md-5 section carousel-list">
-      <h4 class="with-icon lowercase">
-        <span class="icon-fr2 icon-fr2-Lab"></span>
-        Suggested Searches
-        <a href="" class="more-details">view all</a>
-      </h4>
-
-      <ul class="fr-list with-stats">
-          <li>
-            <a href="">Broadband Policy</a>
-            <ul>
-              <li>187 documents in the last year</li>
-              <li>
-                <i class="icon-fr2-Chat"></i>
-                62 open for comment
-              </li>
-            </ul>
-          </li>
-          <li>
-            <a href="">Energy Efficiency &amp; Renewable Resources</a>
-            <ul>
-              <li>456 documents in the last year</li>
-              <li>
-                <i class="icon-fr2-Chat"></i>
-                23 open for comment
-              </li>
-            </ul>
-          </li>
-          <li>
-            <a href="">Patent, Trademark, and Copyright</a>
-            <ul>
-              <li>1266 documents in the last year</li>
-              <li>
-                <i class="icon-fr2-Chat"></i>
-                67 open for comment
-              </li>
-            </ul>
-          </li>
-          <li>
-            <a href="">Climate Change</a>
-            <ul>
-              <li>441 documents in the last year</li>
-              <li>
-                <i class="icon-fr2-Chat"></i>
-                35 open for comment
-              </li>
-            </ul>
-          </li>
-          <li>
-            <a href="">Airworthiness Directives</a>
-            <ul>
-              <li>797 documents in the last year</li>
-              <li>
-                <i class="icon-fr2-Chat"></i>
-                24 open for comment
-              </li>
-            </ul>
-          </li>
-      </ul>
-    </div>
-
-  </div>
-</div>
-
-      <div id="home-carousel-content-business" class="nav-content ">
-  <div class="row">
-
-    <div class="col-xs-7 col-md-7 carousel-wrapper">
-      <div class="carousel-item">
-        <div>
-          <img src="https://s3.amazonaws.com/lede-photos.federalregister.gov/5627/navigation.jpg">
-        </div>
-
-        <ol class="carousel-indicators">
-          <li class="active"></li>
-          <li></li>
-          <li></li>
-          <li></li>
-        </ol>
-
-        <div class="clearfix"></div>
-
-        <p>This rule relaxes the minimum size and grade requirements currently prescribed for grapefruit under the marketing order for oranges and grapefruit grown in Lower Rio Grande Valley in Texas (order). The order is administered locally by the Texas Valley Citrus Committee (Committee).</p>
-      </div>
-    </div>
-
-    <div class="col-xs-5 col-md-5 section carousel-list">
-      <h4 class="with-icon lowercase">
-        <span class="icon-fr2 icon-fr2-Factory"></span>
-        Suggested Searches
-        <a href="" class="more-details">view all</a>
-      </h4>
-
-      <ul class="fr-list with-stats">
-          <li>
-            <a href="">Automobile Safety &amp; Fuel Economy</a>
-            <ul>
-              <li>42 documents in the last year</li>
-              <li>
-                <i class="icon-fr2-Chat"></i>
-                62 open for comment
-              </li>
-            </ul>
-          </li>
-          <li>
-            <a href="">Air Travel</a>
-            <ul>
-              <li>138 documents in the last year</li>
-              <li>
-                <i class="icon-fr2-Chat"></i>
-                23 open for comment
-              </li>
-            </ul>
-          </li>
-          <li>
-            <a href="">Oil and Gas Leasing</a>
-            <ul>
-              <li>31 documents in the last year</li>
-              <li>
-                <i class="icon-fr2-Chat"></i>
-                67 open for comment
-              </li>
-            </ul>
-          </li>
-          <li>
-            <a href="">Trade Adjustment Assistance</a>
-            <ul>
-              <li>257 documents in the last year</li>
-              <li>
-                <i class="icon-fr2-Chat"></i>
-                35 open for comment
-              </li>
-            </ul>
-          </li>
-          <li>
-            <a href="">Plant Protection and Quarantine</a>
-            <ul>
-              <li>91 documents in the last year</li>
-              <li>
-                <i class="icon-fr2-Chat"></i>
-                24 open for comment
-              </li>
-            </ul>
-          </li>
-      </ul>
-    </div>
-
-  </div>
-</div>
-
-      <div id="home-carousel-content-health" class="nav-content ">
-  <div class="row">
-
-    <div class="col-xs-7 col-md-7 carousel-wrapper">
-      <div class="carousel-item">
-        <div>
-          <img src="https://s3.amazonaws.com/lede-photos.federalregister.gov/5618/navigation.jpg">
-        </div>
-
-        <ol class="carousel-indicators">
-          <li class="active"></li>
-          <li></li>
-          <li></li>
-          <li></li>
-        </ol>
-
-        <div class="clearfix"></div>
-
-        <p>This proposed rule would require all local educational agencies participating in the National School Lunch Program and/or the School Breakfast Program to meet expanded local school wellness policy requirements consistent with the new requirements set forth in section 204 of the Healthy, Hunger-Free Kids Act of 2010.</p>
-      </div>
-    </div>
-
-    <div class="col-xs-5 col-md-5 section carousel-list">
-      <h4 class="with-icon lowercase">
-        <span class="icon-fr2 icon-fr2-Medicine"></span>
-        Suggested Searches
-        <a href="" class="more-details">view all</a>
-      </h4>
-
-      <ul class="fr-list with-stats">
-          <li>
-            <a href="">Health Care Reform</a>
-            <ul>
-              <li>360 documents in the last year</li>
-              <li>
-                <i class="icon-fr2-Chat"></i>
-                62 open for comment
-              </li>
-            </ul>
-          </li>
-          <li>
-            <a href="">Veterans Employment &amp; Training</a>
-            <ul>
-              <li>35 documents in the last year</li>
-              <li>
-                <i class="icon-fr2-Chat"></i>
-                23 open for comment
-              </li>
-            </ul>
-          </li>
-          <li>
-            <a href="">Veterans Educational Benefits</a>
-            <ul>
-              <li>4 documents in the last year</li>
-              <li>
-                <i class="icon-fr2-Chat"></i>
-                67 open for comment
-              </li>
-            </ul>
-          </li>
-          <li>
-            <a href="">Disaster Declarations &amp; Assistance</a>
-            <ul>
-              <li>849 documents in the last year</li>
-              <li>
-                <i class="icon-fr2-Chat"></i>
-                35 open for comment
-              </li>
-            </ul>
-          </li>
-          <li>
-            <a href="">Veterans Disability Ratings &amp; Claims</a>
-            <ul>
-              <li>10 documents in the last year</li>
-              <li>
-                <i class="icon-fr2-Chat"></i>
-                24 open for comment
-              </li>
-            </ul>
-          </li>
-      </ul>
-    </div>
-
-  </div>
-</div>
-
-    </div>
+  <div class="col-xs-10 col-md-10">
+    <ul class="fr-list with-bullets reader-aids">
+        <li><a href="">Office of the Federal Register Blog</a></li>
+        <li><a href="">Using FederalRegister.gov</a></li>
+        <li><a href="">Videos &amp; Tutorials</a></li>
+        <li><a href="">Recent Site Updates</a></li>
+        <li><a href="">Understanding the Federal Register</a></li>
+        <li><a href="">Developer Tools</a></li>
+    </ul>
   </div>
 </div>
 
 
-      <div class="row">
-        <div class="col-xs-8 col-md-8 section with-icon-header">
-  <h4 class="with-icon">
-    <span class="icon-fr2 icon-fr2-Temperature"></span>
-    Popular Documents
-  </h4>
-  <!-- <table class="fr-table-stats fr-table"> -->
-
-    <div class="fr-list with-stats">
-      <span class="rule_type with-tooltip-e mini icon-fr2-rule"
-            data-tooltip="Rule">
-      </span>
-      <a href="#" class="fr-link">Child Restraint Systems</a>
-      <ul class="fr-link-stats">
-        <li class="with-tooltip" data-tooltip="Number of views on FederalRegister.gov">
-          <i class="icon-fr2 icon-fr2-Eye"></i>
-          354
-        </li>
-        <li class="with-tooltip" data-tooltip="Number of times emailed to a friend">
-          <i class="icon-fr2 icon-fr2-message with-tooltip"></i>
-          72
-        </li>
-        <li class="with-tooltip" data-tooltip="Number of public comments on Regulations.gov">
-          <i class="icon-fr2 icon-fr2-Chat with-tooltip"></i>
-          998
-        </li>
-        <li class="with-tooltip" data-tooltip="Number of times mentioned on Twitter">
-          <i class="icon-fr2 icon-fr2-twitter with-tooltip"></i>
-          42
-        </li>
-      </ul>
-    </div>
-    <div class="fr-list with-stats">
-      <span class="rule_type with-tooltip-e mini icon-fr2-rule"
-            data-tooltip="Rule">
-      </span>
-      <a href="#" class="fr-link">Shared Responsibility for Employers Regarding Health Coverage</a>
-      <ul class="fr-link-stats">
-        <li class="with-tooltip" data-tooltip="Number of views on FederalRegister.gov">
-          <i class="icon-fr2 icon-fr2-Eye"></i>
-          267
-        </li>
-        <li class="with-tooltip" data-tooltip="Number of times emailed to a friend">
-          <i class="icon-fr2 icon-fr2-message with-tooltip"></i>
-          75
-        </li>
-        <li class="with-tooltip" data-tooltip="Number of public comments on Regulations.gov">
-          <i class="icon-fr2 icon-fr2-Chat with-tooltip"></i>
-          628
-        </li>
-        <li class="with-tooltip" data-tooltip="Number of times mentioned on Twitter">
-          <i class="icon-fr2 icon-fr2-twitter with-tooltip"></i>
-          39
-        </li>
-      </ul>
-    </div>
-    <div class="fr-list with-stats">
-      <span class="rule_type with-tooltip-e mini icon-fr2-rule"
-            data-tooltip="Rule">
-      </span>
-      <a href="#" class="fr-link">Uniform Administrative Requirements, Cost Principles, and Audit Requirements for Federal Awards</a>
-      <ul class="fr-link-stats">
-        <li class="with-tooltip" data-tooltip="Number of views on FederalRegister.gov">
-          <i class="icon-fr2 icon-fr2-Eye"></i>
-          402
-        </li>
-        <li class="with-tooltip" data-tooltip="Number of times emailed to a friend">
-          <i class="icon-fr2 icon-fr2-message with-tooltip"></i>
-          81
-        </li>
-        <li class="with-tooltip" data-tooltip="Number of public comments on Regulations.gov">
-          <i class="icon-fr2 icon-fr2-Chat with-tooltip"></i>
-          31
-        </li>
-        <li class="with-tooltip" data-tooltip="Number of times mentioned on Twitter">
-          <i class="icon-fr2 icon-fr2-twitter with-tooltip"></i>
-          9
-        </li>
-      </ul>
-    </div>
-    <div class="fr-list with-stats">
-      <span class="rule_type with-tooltip-e mini icon-fr2-proposed_rule"
-            data-tooltip="Proposed Rule">
-      </span>
-      <a href="#" class="fr-link">Food Labeling: Revision of the Nutrition and Supplement Facts Labels</a>
-      <ul class="fr-link-stats">
-        <li class="with-tooltip" data-tooltip="Number of views on FederalRegister.gov">
-          <i class="icon-fr2 icon-fr2-Eye"></i>
-          187
-        </li>
-        <li class="with-tooltip" data-tooltip="Number of times emailed to a friend">
-          <i class="icon-fr2 icon-fr2-message with-tooltip"></i>
-          56
-        </li>
-        <li class="with-tooltip" data-tooltip="Number of public comments on Regulations.gov">
-          <i class="icon-fr2 icon-fr2-Chat with-tooltip"></i>
-          NA
-        </li>
-        <li class="with-tooltip" data-tooltip="Number of times mentioned on Twitter">
-          <i class="icon-fr2 icon-fr2-twitter with-tooltip"></i>
-          18
-        </li>
-      </ul>
-    </div>
-    <div class="fr-list with-stats">
-      <span class="rule_type with-tooltip-e mini icon-fr2-proposed_rule"
-            data-tooltip="Proposed Rule">
-      </span>
-      <a href="#" class="fr-link">Annual Update of the HHS Poverty Guidelines</a>
-      <ul class="fr-link-stats">
-        <li class="with-tooltip" data-tooltip="Number of views on FederalRegister.gov">
-          <i class="icon-fr2 icon-fr2-Eye"></i>
-          124
-        </li>
-        <li class="with-tooltip" data-tooltip="Number of times emailed to a friend">
-          <i class="icon-fr2 icon-fr2-message with-tooltip"></i>
-          34
-        </li>
-        <li class="with-tooltip" data-tooltip="Number of public comments on Regulations.gov">
-          <i class="icon-fr2 icon-fr2-Chat with-tooltip"></i>
-          323
-        </li>
-        <li class="with-tooltip" data-tooltip="Number of times mentioned on Twitter">
-          <i class="icon-fr2 icon-fr2-twitter with-tooltip"></i>
-          89
-        </li>
-      </ul>
-    </div>
-    <div class="fr-list with-stats">
-      <span class="rule_type with-tooltip-e mini icon-fr2-notice"
-            data-tooltip="Notice">
-      </span>
-      <a href="#" class="fr-link">CLIA Program and HIPAA Privacy Rule; Patients&#x27; Access to Test Reports</a>
-      <ul class="fr-link-stats">
-        <li class="with-tooltip" data-tooltip="Number of views on FederalRegister.gov">
-          <i class="icon-fr2 icon-fr2-Eye"></i>
-          424
-        </li>
-        <li class="with-tooltip" data-tooltip="Number of times emailed to a friend">
-          <i class="icon-fr2 icon-fr2-message with-tooltip"></i>
-          324
-        </li>
-        <li class="with-tooltip" data-tooltip="Number of public comments on Regulations.gov">
-          <i class="icon-fr2 icon-fr2-Chat with-tooltip"></i>
-          3
-        </li>
-        <li class="with-tooltip" data-tooltip="Number of times mentioned on Twitter">
-          <i class="icon-fr2 icon-fr2-twitter with-tooltip"></i>
-          NA
-        </li>
-      </ul>
-    </div>
-</div>
-
-        <div class="col-xs-4 col-md-4 section with-icon-header pres-doc-preview">
-  <h4 class="with-icon">
-    <span class="icon-fr2 icon-fr2-stars"></span>
-    Presidential Documents
+        <div class="row">
+          <div class="col-xs-8 col-md-8 section">
+            <div class="section">
+  <h4 class="with-icon lowercase">
+    <span class="icon-fr2 icon-fr2-quote"></span>
+    Office of the Federal Register Blog
+    <a href="" class="more-details">view all</a>
   </h4>
 
   <ul class="fr-list">
     <li>
-      <span class="fr-doc-title">Executive Order 13659</span>
-      <a href="" class="fr-link">Streamlining the Export/Import Process for America's Businesses</a>
-      <span class="fr-doc-date">Tuesday, February 25, 2014</span>
+      <h5><a href="">First PKI Conference!</a></h5>
+      <p>
+        The National Archives and Records Administration (NARA) and the Office
+        of the Federal Register (OFR) hosted its first PKI (Public Key
+        Infrastructure) Conference on March 6, 2014. The conference was an
+        opportunity for federal agencies to gather and discuss the...
+        <span class="byline">
+          <span class="authorship">
+            <a href="">Aaron Woo</a> - <a href="">March 12, 2014</a>
+          </span>
+        </span>
+      </p>
     </li>
 
     <li>
-      <span class="fr-doc-title">Proclamation</span>
-      <a href="" class="fr-link">20th Anniversary of Executive Order 12898 on Environmental Justice</a>
-      <span class="fr-doc-date">Tuesday, February 13, 2013</span>
+      <h5><a href="">2013 PKI vs Non-PKI Submission Statistics</a></h5>
+      <p>
+        We just updated the
+        <a href="">Tutorials, History, and Statistics page</a> on this site
+        to include some simple statistics on 2013 Federal agency submission to the
+        OFR! The Office of the Federal Register is equipped to accept digital
+        submission of Federal Register documents...
+        <span class="byline">
+          <span class="authorship">
+            <a href="">Aaron Woo</a> - <a href="">February 28, 2014</a>
+          </span>
+        </span>
+      </p>
     </li>
 
     <li>
-      <span class="fr-doc-title">Notice</span>
-      <a href="" class="fr-link">Continuation of the National Emergency With Respect to Zimbabwe</a>
-      <span class="fr-doc-date">Tuesday, March 04, 2013</span>
+      <h5><a href="">Federal Register Workshop, Online!</a></h5>
+      <p>
+        The Office of the Federal Register(OFR) regularly offers a workshop
+        entitled "Federal Register, What is it and How to Use it". The workshop
+        provides an overview of the regulatory process and the OFR’s role in that
+        process. Specifically, it discusses...
+        <span class="byline">
+          <span class="comments">10 comments</span>
+          <span class="authorship">
+            <a href="">Aaron Woo</a> - <a href="">December 9, 2013</a>
+          </span>
+        </span>
+      </p>
     </li>
   </ul>
-
-  <table class="fr-table fr-monthly-overview alpha">
-    <thead>
-      <tr>
-        <th colspan="2">February 2014</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td class="count">2</td>
-        <td><a href="">Executive Orders</a></td>
-      </tr>
-      <tr>
-        <td class="count">18</td>
-        <td><a href="">Proclamations</a></td>
-      </tr>
-      <tr>
-        <td class="count">2</td>
-        <td><a href="">Notices</a></td>
-      </tr>
-      <tr>
-        <td class="count">1</td>
-        <td><a href="">Memorandum</a></td>
-      </tr>
-    </tbody>
-  </table>
-
-  <table class="fr-table fr-monthly-overview">
-    <thead>
-      <tr>
-        <th colspan="2">March 2014</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td class="count">1</td>
-        <td><a href="">Executive Order</a></td>
-      </tr>
-      <tr>
-        <td class="count">0</td>
-        <td><a href="">Proclamations</a></td>
-      </tr>
-      <tr>
-        <td class="count">1</td>
-        <td><a href="">Notice</a></td>
-      </tr>
-      <tr>
-        <td class="count">1</td>
-        <td><a href="">Memorandum</a></td>
-      </tr>
-    </tbody>
-  </table>
 </div>
 
-      </div>
+            <div class="section">
+  <h4 class="with-icon lowercase">
+    <span id="tour-7" style="width: 40%;position:absolute;">&nbsp</span>
+    <span class="icon-fr2 icon-fr2-help"></span>
+    Using FederalRegister.Gov
+    <a href="" class="more-details">view all</a>
+  </h4>
 
-      <div class="row home-aid-box">
-  <div classs="col-xs-12 col-md-12">
-    <div class="fr-box fr-box-reader-aid ">
-    <div class="fr-seal-block fr-seal-block-header"><div class="fr-seal-content">
-    <span id="tour-3" style="width:10%;position:absolute;">&nbsp</span> 
-    <h6>Reader Aids</h6><div class="row fr-seal-meta"><div class="fr-seal-desc"><p>This box contains content that is intended to help the user better use FederalRegister.gov and to better understand the ecosystem that surrounds the federal rulemaking process. This box does not contian official Federal Register content and should be used accordingly.</p></div></div></div></div><div class="content-block simple">
-      <div class="row">
-        <div class="col-xs-8 col-md-8">
+  <div class="row">
+    <div class="col-xs-6 col-md-6 alpha">
+      <ul class="fr-list">
+        <li>
+          <h5><a href="">Advanced Search Tips and Techniques</a></h5>
           <p>
-            Increase your understanding of the Federal Register eco-system and
-            improve your FederalRegister.gov skills with these helpful, unofficial
-            learning articles and videos. See more of our reader aids
-            <a href="">here</a>.
+            We support numerous ways for you to customize your search. Some search options are available in the advanced search tool, and others are inherently available in the basic search entry box. The examples and search strategies in this help document describe search options you can use in the basic search entry box.
           </p>
-        </div>
+        </li>
 
-        <div class="col-xs-4 col-md-4 section">
-          <p class="blog">
-            <span id="tour-4" style="width: 60%;position:absolute;">&nbsp</span>
-            <span class="icon-fr2 icon-fr2-quote"></span>
-            Read the <a href="">Office of the Federal Register Blog</a>
+        <li>
+          <h5><a href="">The Public Commenting Process</a></h5>
+          <p>
+            The public commenting process is an integral part of the rulemaking process. One of the goals for FederalRegister.gov is to make this process as accessible as possible everyone. This article explains more about how this process works and provides some tips on submitting great comments.
           </p>
-        </div>
-      </div>
-
-      <div class="row">
-        <div class="col-xs-8 col-md-8 section">
-          <h4 class="with-icon lowercase">
-            <span class="icon-fr2 icon-fr2-help"></span>
-            Using FederalRegister.gov
-            <a href="" class="more-details">view all</a>
-          </h4>
-          <ul class="fr-list with-bullets reader-aids two-col">
-            <li>
-              <a href="">Advanced Search Tips and Techniques</a>
-            </li>
-            <li>
-              <a href="">Understanding Public Inspection Documents</a>
-            </li>
-            <li>
-              The <a href="">Completeness of Coverage Since 1994</a>
-              and <a href="">Finding Older Documents</a>
-            </li>
-            <li>
-              <a href="">How Federal Register Documents affect the Code of Federal Regulations</a>
-            </li>
-          </ul>
-          <ul class="fr-list with-bullets reader-aids two-col">
-            <li>
-              <a href="">Subscription options</a>
-              and <a href="">Managing Subscriptions</a>
-            </li>
-            <li>
-              The <a href="">History of the Federal Register</a>
-            </li>
-            <li>
-              Finding <a href="">Public Meetings & Workshops</a>
-            </li>
-            <li>
-              <a href="">Understanding the Public Commenting Process</a>
-            </li>
-          </ul>
-        </div>
-
-        <div class="col-xs-4 col-md-4 section">
-          <h4 class="with-icon lowercase">
-            <span class="icon-fr2 icon-fr2-pc"></span>
-            Recent Site Updates
-            <a href="" class="more-details">view all</a>
-          </h4>
-          <ul class="fr-list with-bullets reader-aids">
-            <li>
-              <a href="">New Federal Register Index</a>
-            </li>
-            <li>
-              <a href="">Improved Display of Proposed Rule Amendments</a>
-            </li>
-            <li>
-              <a href="">Improved Display of Regulatory Text</a>
-            </li>
-            <li>
-              <a href="">MyFR, Agency, and Document Page Updates</a>
-            </li>
-          </ul>
-        </div>
-      </div>
-</div><div class="fr-seal-block fr-seal-block-footer"><h6>Reader Aids</h6></div></div>  </div>
-</div>
-
-      <div class="row">
-        <div class="col-xs-8 col-md-8 section with-icon-header">
-  <h4 class="with-icon">
-    <span class="icon-fr2 icon-fr2-Network-alt"></span>
-    Explore Agencies
-  </h4>
-
-  <div class="table-search-box">
-    <form>
-      <input type="text" class="form-control fr-table-form" placeholder="Go to a specific agency">
-    </form>
-  </div>
-
-  <table class="fr-table">
-    <thead>
-      <tr>
-        <th></th>
-        <th width="5%" class="past_7_days with-tooltip-s"
-          data-tooltip="Articles Published in the Last 7 Days">
-          <span class="icon-fr2-Refresh-7"></span>
-        </th>
-        <th width="5%" class="recently_opened with-tooltip-s"
-          data-tooltip="Articles with Comment Periods Opened in the Last 7 Days">
-          <span class="icon-fr2-Chat"></span>
-        </th>
-      </tr>
-    </thead>
-
-    <tbody>
-        <tr>
-          <td class="agency_name">
-            <a href="">Agriculture Department</a>
-          </td>
-
-          <td class="count_7_days">
-            <a href="">32</a>
-          </td>
-
-          <td class="comments_recently_opened">
-            <a href="">21</a>
-          </td>
-        </tr>
-        <tr>
-          <td class="agency_name">
-            <a href="">Commerce Department</a>
-          </td>
-
-          <td class="count_7_days">
-            <a href="">75</a>
-          </td>
-
-          <td class="comments_recently_opened">
-            <a href="">9</a>
-          </td>
-        </tr>
-        <tr>
-          <td class="agency_name">
-            <a href="">Defense Department</a>
-          </td>
-
-          <td class="count_7_days">
-            <a href="">22</a>
-          </td>
-
-          <td class="comments_recently_opened">
-            <a href="">9</a>
-          </td>
-        </tr>
-        <tr>
-          <td class="agency_name">
-            <a href="">Education Department</a>
-          </td>
-
-          <td class="count_7_days">
-            <a href="">10</a>
-          </td>
-
-          <td class="comments_recently_opened">
-            <a href="">10</a>
-          </td>
-        </tr>
-        <tr>
-          <td class="agency_name">
-            <a href="">Energy Department</a>
-          </td>
-
-          <td class="count_7_days">
-            <a href="">44</a>
-          </td>
-
-          <td class="comments_recently_opened">
-            <a href="">7</a>
-          </td>
-        </tr>
-        <tr>
-          <td class="agency_name">
-            <a href="">Environmental Protection Agency</a>
-          </td>
-
-          <td class="count_7_days">
-            <a href="">29</a>
-          </td>
-
-          <td class="comments_recently_opened">
-            <a href="">22</a>
-          </td>
-        </tr>
-        <tr>
-          <td class="agency_name">
-            <a href="">Health and Human Services Department</a>
-          </td>
-
-          <td class="count_7_days">
-            <a href="">80</a>
-          </td>
-
-          <td class="comments_recently_opened">
-            <a href="">15</a>
-          </td>
-        </tr>
-        <tr>
-          <td class="agency_name">
-            <a href="">Homeland Security Department</a>
-          </td>
-
-          <td class="count_7_days">
-            <a href="">27</a>
-          </td>
-
-          <td class="comments_recently_opened">
-            <a href="">9</a>
-          </td>
-        </tr>
-        <tr>
-          <td class="agency_name">
-            <a href="">Housing and Urban Development Department</a>
-          </td>
-
-          <td class="count_7_days">
-            <a href="">16</a>
-          </td>
-
-          <td class="comments_recently_opened">
-            <a href="">1</a>
-          </td>
-        </tr>
-        <tr>
-          <td class="agency_name">
-            <a href="">Interior Department</a>
-          </td>
-
-          <td class="count_7_days">
-            <a href="">38</a>
-          </td>
-
-          <td class="comments_recently_opened">
-            <a href="">20</a>
-          </td>
-        </tr>
-        <tr>
-          <td class="agency_name">
-            <a href="">Justice Department</a>
-          </td>
-
-          <td class="count_7_days">
-            <a href="">10</a>
-          </td>
-
-          <td class="comments_recently_opened">
-            <a href="">0</a>
-          </td>
-        </tr>
-        <tr>
-          <td class="agency_name">
-            <a href="">Labor Department</a>
-          </td>
-
-          <td class="count_7_days">
-            <a href="">16</a>
-          </td>
-
-          <td class="comments_recently_opened">
-            <a href="">14</a>
-          </td>
-        </tr>
-        <tr>
-          <td class="agency_name">
-            <a href="">State Department</a>
-          </td>
-
-          <td class="count_7_days">
-            <a href="">3</a>
-          </td>
-
-          <td class="comments_recently_opened">
-            <a href="">2</a>
-          </td>
-        </tr>
-        <tr>
-          <td class="agency_name">
-            <a href="">Transportation Department</a>
-          </td>
-
-          <td class="count_7_days">
-            <a href="">91</a>
-          </td>
-
-          <td class="comments_recently_opened">
-            <a href="">66</a>
-          </td>
-        </tr>
-        <tr>
-          <td class="agency_name">
-            <a href="">Treasury Department</a>
-          </td>
-
-          <td class="count_7_days">
-            <a href="">30</a>
-          </td>
-
-          <td class="comments_recently_opened">
-            <a href="">19</a>
-          </td>
-        </tr>
-        <tr>
-          <td class="agency_name">
-            <a href="">Veterans Affairs Department</a>
-          </td>
-
-          <td class="count_7_days">
-            <a href="">7</a>
-          </td>
-
-          <td class="comments_recently_opened">
-            <a href="">3</a>
-          </td>
-        </tr>
-    </tbody>
-  </table>
-</div>
-
-        <div class="col-xs-4 col-md-4 section with-icon-header">
-  <h4 class="with-icon">
-    <span class="icon-fr2 icon-fr2-Molecular"></span>
-    Explore Topics
-  </h4>
-
-  <div class="table-search-box">
-    <form>
-      <input type="text" class="form-control fr-table-form" placeholder="Go to a specific topic">
-    </form>
-  </div>
-
-  <table class="fr-table">
-    <thead>
-      <tr>
-        <th></th>
-        <th width="5%" class="past_7_days with-tooltip-s"
-          data-tooltip="Articles Published in the Last 7 Days">
-          <span class="icon-fr2 icon-fr2-Refresh-7"></span>
-        </th>
-        <th width="5%" class="recently_opened with-tooltip-s"
-          data-tooltip="Articles with Comment Periods Opened in the Last 7 Days">
-          <span class="icon-fr2 icon-fr2-Chat"></span>
-        </th>
-      </tr>
-    </thead>
-
-    <tbody>
-        <tr>
-          <td class="topic_name">
-            <a href="">Air pollution control</a>
-          </td>
-
-          <td class="count_7_days">
-            <a href="">17</a>
-          </td>
-
-          <td class="comments_recently_opened">
-            <a href="">8</a>
-          </td>
-        </tr>
-        <tr>
-          <td class="topic_name">
-            <a href="">Air transportation</a>
-          </td>
-
-          <td class="count_7_days">
-            <a href="">37</a>
-          </td>
-
-          <td class="comments_recently_opened">
-            <a href="">19</a>
-          </td>
-        </tr>
-        <tr>
-          <td class="topic_name">
-            <a href="">Airspace</a>
-          </td>
-
-          <td class="count_7_days">
-            <a href="">17</a>
-          </td>
-
-          <td class="comments_recently_opened">
-            <a href="">4</a>
-          </td>
-        </tr>
-        <tr>
-          <td class="topic_name">
-            <a href="">Aviation safety</a>
-          </td>
-
-          <td class="count_7_days">
-            <a href="">38</a>
-          </td>
-
-          <td class="comments_recently_opened">
-            <a href="">20</a>
-          </td>
-        </tr>
-        <tr>
-          <td class="topic_name">
-            <a href="">Environmental protection</a>
-          </td>
-
-          <td class="count_7_days">
-            <a href="">22</a>
-          </td>
-
-          <td class="comments_recently_opened">
-            <a href="">9</a>
-          </td>
-        </tr>
-        <tr>
-          <td class="topic_name">
-            <a href="">Flood insurance</a>
-          </td>
-
-          <td class="count_7_days">
-            <a href="">2</a>
-          </td>
-
-          <td class="comments_recently_opened">
-            <a href="">7</a>
-          </td>
-        </tr>
-        <tr>
-          <td class="topic_name">
-            <a href="">Government procurement</a>
-          </td>
-
-          <td class="count_7_days">
-            <a href="">8</a>
-          </td>
-
-          <td class="comments_recently_opened">
-            <a href="">7</a>
-          </td>
-        </tr>
-        <tr>
-          <td class="topic_name">
-            <a href="">Harbors</a>
-          </td>
-
-          <td class="count_7_days">
-            <a href="">18</a>
-          </td>
-
-          <td class="comments_recently_opened">
-            <a href="">2</a>
-          </td>
-        </tr>
-        <tr>
-          <td class="topic_name">
-            <a href="">Imports</a>
-          </td>
-
-          <td class="count_7_days">
-            <a href="">32</a>
-          </td>
-
-          <td class="comments_recently_opened">
-            <a href="">6</a>
-          </td>
-        </tr>
-        <tr>
-          <td class="topic_name">
-            <a href="">Income taxes</a>
-          </td>
-
-          <td class="count_7_days">
-            <a href="">1</a>
-          </td>
-
-          <td class="comments_recently_opened">
-            <a href="">1</a>
-          </td>
-        </tr>
-        <tr>
-          <td class="topic_name">
-            <a href="">Marine safety</a>
-          </td>
-
-          <td class="count_7_days">
-            <a href="">4</a>
-          </td>
-
-          <td class="comments_recently_opened">
-            <a href="">0</a>
-          </td>
-        </tr>
-        <tr>
-          <td class="topic_name">
-            <a href="">Navigation (air)</a>
-          </td>
-
-          <td class="count_7_days">
-            <a href="">19</a>
-          </td>
-
-          <td class="comments_recently_opened">
-            <a href="">4</a>
-          </td>
-        </tr>
-        <tr>
-          <td class="topic_name">
-            <a href="">Navigation (water)</a>
-          </td>
-
-          <td class="count_7_days">
-            <a href="">5</a>
-          </td>
-
-          <td class="comments_recently_opened">
-            <a href="">0</a>
-          </td>
-        </tr>
-        <tr>
-          <td class="topic_name">
-            <a href="">Waterways</a>
-          </td>
-
-          <td class="count_7_days">
-            <a href="">4</a>
-          </td>
-
-          <td class="comments_recently_opened">
-            <a href="">0</a>
-          </td>
-        </tr>
-        <tr>
-          <td class="topic_name">
-            <a href="">Security Measures</a>
-          </td>
-
-          <td class="count_7_days">
-            <a href="">12</a>
-          </td>
-
-          <td class="comments_recently_opened">
-            <a href="">4</a>
-          </td>
-        </tr>
-        <tr>
-          <td class="topic_name">
-            <a href="">Volatile organic compounds</a>
-          </td>
-
-          <td class="count_7_days">
-            <a href="">14</a>
-          </td>
-
-          <td class="comments_recently_opened">
-            <a href="">5</a>
-          </td>
-        </tr>
-    </tbody>
-  </table>
-</div>
-
-      </div>
+        </li>
+
+        <li>
+          <h5><a href="">Finding Public Meetings and Workshops</a></h5>
+          <p>
+            Public meetings and workshops are routinely published by agencies in the Federal Register. Learn how to create proper searches for these types of documents so you don’t miss out on what interests you.
+          </p>
+        </li>
+      </ul>
+    </div>
+
+    <div class="col-xs-6 col-md-6 omega">
+      <ul class="fr-list">
+        <li>
+          <h5><a href="">Understanding Public Inspection Documents</a></h5>
+          <p>
+            The Public Inspection web page on FederalRegister.gov offers a preview of documents scheduled to appear in the next day’s Federal Register issue. The Public Inspection page may also include documents scheduled for later issues, at the request of the issuing agency. This gives the public access to important or complex documents before they publish in the Federal Register.
+          </p>
+        </li>
+
+        <li>
+          <h5><a href="">Subscription Options and Managing Your Subscriptions</a></h5>
+          <p>
+            FederalRegister.gov offers many ways to subscribe to regulatory content. This article covers how to subscribe to custom searches, daily table of contents, documents from a particular agency and more. It also covers how to manage your subscriptions via your MyFR account.
+          </p>
+        </li>
+
+        <li>
+          <h5><a href="">The Completeness of Coverage Since 1994 on FederalRegister.gov</a></h5>
+          <p>
+            This article covers what content is available on FederalRegister.gov and the various forms that it is available in.
+          </p>
+        </li>
+      </ul>
     </div>
   </div>
+</div>
 
+            <div class="section">
+  <h4 class="with-icon lowercase">
+    <span class="icon-fr2 icon-fr2-lightbulb-active"></span>
+    Understanding the Federal Register
+    <a href="" class="more-details">view all</a>
+  </h4>
+
+  <div class="row">
+    <div class="col-xs-6 col-md-6 alpha">
+      <ul class="fr-list">
+        <li>
+          <h5><a href="">The History of the Federal Register</a></h5>
+          <p>
+            The Federal Register is one of our countries original Open Government initiatives. Mandated with ensuring that regulatory rulemaking is created in an open and publically accessible way is in our DNA. Learn more in this article...
+          </p>
+        </li>
+
+        <li>
+          <h5><a href="">How Federal Register Documents affect the Code of Federal Regulations</a></h5>
+          <p>
+            The Federal Register and the Code of Federal Regulations (CFR) are intimately linked to one another. Learn how Federal Register Documents modify the Code of Federal Regulations and how those changes finally make their way into the CFR.
+          </p>
+        </li>
+      </ul>
+    </div>
+
+    <div class="col-xs-6 col-md-6 omega">
+      <ul class="fr-list">
+        <li>
+          <h5><a href="">Finding Older Federal Register Documents</a></h5>
+          <p>
+            The Federal Register has been published daily (except weekends and holidays) since 1936, but documents have only been digitalized since 1994. This article provides some suggestions on where to find these older articles should you need to do so.
+          </p>
+        </li>
+
+        <li>
+          <h5><a href="">What’s In the Federal Register?</a></h5>
+          <p>
+            Not sure what the Federal Register encompasses? Here we explain the various document types that are published in the Federal Register and help explain where to get started in understanding how these documents affect you or your business.
+          </p>
+        </li>
+      </ul>
+    </div>
+  </div>
+</div>
+
+          </div>
+
+          <div class="col-xs-4 col-md-4 section">
+            <div class="section">
+  <h4 class="with-icon lowercase">
+    <span class="icon-fr2 icon-fr2-pc"></span>
+    Recent Site Updates
+    <a href="" class="more-details">view all</a>
+  </h4>
+
+  <div class="row">
+    <div class="col-xs-12 col-md-12">
+      <ul class="fr-list">
+        <li>
+          <h5><a href="">New Federal Register Index</a></h5>
+          <p>
+            The Office of the Federal Register is proud to introduce a completely re-engineered Federal Register Index.  It is available as a traditional printed product, but also as a currently updated online service...
+          </p>
+        </li>
+
+        <li>
+          <h5><a href="">Improved Display of Proposed Rule Amendments</a></h5>
+          <p>
+            A few months ago we made some changes to the way we display Federal Register documents in HTML on FederalRegister.gov. In particular, we wanted to improve the display of regulatory text by adding...
+          </p>
+        </li>
+
+        <li>
+          <h5><a href="">Improved Display of Regulatory Text</a></h5>
+          <p>
+            Recently we made some changes to the way we display Federal Register documents in HTML on FederalRegister.gov. In particular, we wanted to improve the display of regulatory text by adding a variety icons...
+          </p>
+        </li>
+
+        <li>
+          <h5><a href="">MyFR, Agency, and Document Page Updates</a></h5>
+          <p>
+            In our latest release we’ve made improvements to the clipping section of MyFR, added an agency specific search to individual agency pages and updated various parts of our Document pages...
+          </p>
+        </li>
+      </ul>
+    </div>
+  </div>
+</div>
+
+            <div class="section">
+  <h4 class="with-icon lowercase">
+    <span class="icon-fr2 icon-fr2-movie"></span>
+    Videos & Tutorials
+    <a href="" class="more-details">view all</a>
+  </h4>
+
+  <div class="row">
+    <div class="col-xs-12 col-md-12">
+      <ul class="fr-list">
+        <li>
+          <h5><a href="">Presidential Document Search</a></h5>
+          <p>
+            In this video learn how to make the most of our advanced search features for finding and subscribing to Presidential Documents.
+          </p>
+        </li>
+
+        <li>
+          <h5><a href="">Utilizing Complex Search Terms</a></h5>
+          <p>
+            This interactive document introduces you to advanced options for searching and allows you to explore them as you learn.
+          </p>
+        </li>
+
+        <li>
+          <h5><a href="">Saving Documents for Later</a></h5>
+          <p>
+            In this video learn how you can use the ‘clipping’ feature of MyFR to organize and store documents for later.
+          </p>
+        </li>
+
+        <li>
+          <h5><a href="">Using Search to Create Custom Subscriptions</a></h5>
+          <p>
+            FederalRegister.gov features a robust search engine that allows you to quickly and easily create complex searches of Federal Register documents. This tutorial will show you how to use these searches to create custom, targeted subscriptions to new content.
+          </p>
+        </li>
+      </ul>
+    </div>
+  </div>
+</div>
+
+            <div class="section">
+  <h4 class="with-icon lowercase">
+    <span class="icon-fr2 icon-fr2-tools"></span>
+    Developer Tools
+    <a href="" class="more-details">view all</a>
+  </h4>
+
+  <div class="row">
+    <div class="col-xs-12 col-md-12">
+      <ul class="fr-list">
+        <li>
+          <h5><a href="">REST API</a></h5>
+          <p>
+            Make use of the work done on FederalRegister.gov to organize and normalize our data by using our REST API (CSV/JSON).
+          </p>
+        </li>
+
+        <li>
+          <h5><a href="">Interactive Documentation</a></h5>
+          <p>
+            Explore our API or generate complex queries easily using our interactive documentation.
+          </p>
+        </li>
+
+        <li>
+          <h5><a href="">Ruby Client Gem</a></h5>
+          <p>
+            Access our API programatically via our open source Ruby gem - available on <a href="">Github</a> and <a href="">RubyGems</a>.
+          </p>
+        </li>
+
+        <li>
+          <h5><a href="">FederalRegister.gov is Open Source</a></h5>
+          <p>
+            Curious how we accomplished something? As part of our commitment to openness, the entire FederalRegister.gov code base is open source and available on  <a href="">Github</a>.
+          </p>
+        </li>
+
+        <li>
+          <h5><a href="">Bulk Data</a></h5>
+          <p>
+            Want it all? Bulk data of the Federal Register in XML is available from <a href="">FDsys</a>.
+          </p>
+        </li>
+      </ul>
+    </div>
+  </div>
+</div>
+
+          </div>
+        </div>
+</div><div class="fr-seal-block fr-seal-block-footer">
+<h6>Reader Aids</h6></div></div>    </div>
+  </div>
+
+    </div>
+  </div>
 <!-- BOOTSTRAP SCOPE END -->
 </div>
 <!-- BOOTSTRAP SCOPE END -->
-
 
     </div>
 
