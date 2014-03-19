@@ -33,8 +33,8 @@ embedded_search/search.png: embedded_search/search-631d6856f209d349ebd13ff42b04f
 embedded_search/search/index.png: embedded_search/search-631d6856f209d349ebd13ff42b04ff85.png
 embedded_search/search.svg: embedded_search/search-471e4543945637b7ac262d107fa540dd.svg
 embedded_search/search/index.svg: embedded_search/search-471e4543945637b7ac262d107fa540dd.svg
-header/Nara1985Seal.png: header/Nara1985Seal-fcb582c98535fdbb1f580bcc241ac8e0.png
-header/Nara1985Seal/index.png: header/Nara1985Seal-fcb582c98535fdbb1f580bcc241ac8e0.png
+header/Nara1985Seal.png: header/Nara1985Seal-422d5b81dffbbecca981eb83ae004cf1.png
+header/Nara1985Seal/index.png: header/Nara1985Seal-422d5b81dffbbecca981eb83ae004cf1.png
 header/Nara1985Seal.svg: header/Nara1985Seal-8f8278c6f4f2901d78a1bf5a26f5960e.svg
 header/Nara1985Seal/index.svg: header/Nara1985Seal-8f8278c6f4f2901d78a1bf5a26f5960e.svg
 header/official_masthead.png: header/official_masthead-cebfe4619a79da455c53dcf473062640.png
@@ -75,8 +75,8 @@ application-ie8lte.css: application-ie8lte-a97159b7fed0eea203f2b1d2ed46cf0f.css
 application-ie8lte/index.css: application-ie8lte-a97159b7fed0eea203f2b1d2ed46cf0f.css
 application-shared.css: application-shared-44c73f347b9442319a4c551468b5f4b1.css
 application-shared/index.css: application-shared-44c73f347b9442319a4c551468b5f4b1.css
-application.css: application-a23a24689e12b85e634ea28f68831010.css
-application/index.css: application-a23a24689e12b85e634ea28f68831010.css
+application.css: application-fa895ed648efb82b4abdac5a264acfc5.css
+application/index.css: application-fa895ed648efb82b4abdac5a264acfc5.css
 print.css: print-7682b44a1b8b2e8ef3f8b285126a72ba.css
 print/index.css: print-7682b44a1b8b2e8ef3f8b285126a72ba.css
 sprites/_user_utils.png: sprites/_user_utils-bd9b1b8c8d939848c2327b43e4893af5.png
