@@ -12,8 +12,10 @@
   padding-top: 20px;
 }
 
-#tour-links a {
-  padding: 0;
+#tour-links li {
+  list-style-type: none;
+  border-bottom: 1px solid black;
+  padding: 1px;
   width: 100%;
   text-align: left;
 }
@@ -28,18 +30,32 @@
   color:#666;
 }
 
-.navbar.navbar-default .btn.start-tour {
+.start-tour {
   border-radius: 6px;
   border: 1px solid #015BA2;
   padding: 5px;
   color: #FFF;
   background-color: #015BA2;
 }
-.navbar.navbar-default .btn.start-tour:hover {
+
+.start-tour:hover {
   background-color: #003f71;
   border: 1px solid #003f71;
 }
 
-.navbar.navbar-default #restart-tour-button {
+#restart-tour-button {
   display: none;
+  background-color: #015BA2;
+  color: #FFF;
+}
+
+#btn-container {
+  text-align: center;
+}
+
+
+
+#start-tour-button {
+  background-color: #015BA2;
+  color: #FFF;
 }

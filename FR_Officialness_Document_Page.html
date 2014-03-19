@@ -143,7 +143,6 @@
 <script src="/javascripts/modals.js?2029e3f40be1f0872abca524cc2962f148267090" type="text/javascript"></script>
 <script src="/javascripts/navigation.js?2029e3f40be1f0872abca524cc2962f148267090" type="text/javascript"></script>
 <script src="/javascripts/navigation_analytics.js?2029e3f40be1f0872abca524cc2962f148267090" type="text/javascript"></script>
-<script src="/javascripts/paragraph_citation.js?2029e3f40be1f0872abca524cc2962f148267090" type="text/javascript"></script>
 <script src="/javascripts/rss.js?2029e3f40be1f0872abca524cc2962f148267090" type="text/javascript"></script>
 <script src="/javascripts/search_analytics.js?2029e3f40be1f0872abca524cc2962f148267090" type="text/javascript"></script>
 <script src="/javascripts/sectionpage.js?2029e3f40be1f0872abca524cc2962f148267090" type="text/javascript"></script>
@@ -205,30 +204,38 @@
     <script src="/javascripts/tour.js" type="text/javascript"></script>
   </head>
 
-  <div class="navbar navbar-default navbar-fixed-top">
-    <div class="container-fluid btn-wrapper">
-      <a class="btn" href="/FR_Officialness_Homepage.html">Home</a>
-      <a class="btn current" href="">Document</a>
-      <a class="btn" href="/FR_Officialness_Public_Inspection.html">Public Inspection</a>
-      <a class="btn" href="/FR_Officialness_Public_Inspection_ToC.html">Public Inspection ToC</a>
-      <a class="btn" href="/FR_Officialness_Reader_Aids.html">Reader Aids</a>
-      <a class="btn start-tour" id="start-tour-button"  data-steps='document' href="#">Start Tour</a>
-      <a class="btn start-tour" id="restart-tour-button"  data-steps='document' href="#">Restart Tour</a>
-    </div>
-    <div class="description">
-      <p>
-      The pages in this demo are working implementations designed to demostrate
-      the proposed features to ensure the clear delineation of the various
-      types of content (and their legal status) on FederalRegister.gov.
-      </p>
-      <p>
-      Each page features a guided tour of the major features on each page. This
-      tour can be started with the button above.
-      </p>
-      <p>
-      Links to other pages have been disabled on these demo pages, however all
-      hovers and interactive content continue to work.
-      </p>
+  <div id="navbar" class="bootstrap-scope">
+    <div class="wrapper">
+      <div class="container fixed">
+        <div class="col-md-3 col-xs-3 btn-wrapper">
+        <ul id="tour-links">
+          <li><a class="toggle current" href="/FR_Officialness_Homepage.html">Home</a></li>
+          <li><a class="toggle current" href="">Document</a></li>
+          <li><a class="toggle" href="/FR_Officialness_Public_Inspection.html">Public Inspection</a></li>
+          <li><a class="toggle" href="/FR_Officialness_Public_Inspection_ToC.html">Public Inspection ToC</a></li>
+          <li><a class="toggle" href="/FR_Officialness_Reader_Aids.html">Reader Aids</a></li>
+        </ul>
+          <div id="btn-container">
+            <a class="toggle start-tour" id="start-tour-button"  data-steps='document' href="#">Start Tour</a>
+            <a class="toggle start-tour" id="restart-tour-button"  data-steps='document' href="#">Restart Tour</a>
+          </div>
+        </div>
+        <div class="col-md-9 col-xs-9 description">
+          <p>
+          The pages in this demo are working implementations designed to demostrate
+          the proposed features to ensure the clear delineation of the various
+          types of content (and their legal status) on FederalRegister.gov.
+          </p>
+          <p>
+          Each page features a guided tour of the major features on each page. This
+          tour can be started with the button above.
+          </p>
+          <p>
+          Links to other pages have been disabled on these demo pages, however all
+          hovers and interactive content continue to work.
+          </p>
+        </div>
+      </div>
     </div>
   </div>
 
@@ -2083,21 +2090,21 @@
 
     <div class="logo">
   <div class="hgroup official">
-    <div id="tour-1" style="width: 30%;top: 325px;position:absolute;">&nbsp</div>
+    <div id="tour-1" style="width: 30%;top: 50px;position:absolute;">&nbsp</div>
     <hgroup>
       <h1><a href="/" title="Federal Register Home">The Federal Register</a></h1>
       <h2>The Daily Journal of the United States Government</h2>
     </hgroup>
   </div>
+
+  <div class="nara-background-seal" unselectable="on">
+    <div class="nara-background-seal-fade"></div>
+  </div>
+
 </div>
 
   </div>
 </div></header>
-
-      <div class="nara-background-seal" unselectable="on">
-    <div class="nara-background-seal-fade"></div>
-  </div>
-
 
     <div id="main">
       
@@ -2277,6 +2284,7 @@
 </div><div class="fr-seal-block fr-seal-block-footer"><h6>Enhanced Content - Developer Tools</h6></div></div>    </li>
     <li class="official">
       <i class="icon-fr2 icon-fr2-doc-pdf" role="button" data-toggle="dropdown"></i>
+      <span id="tour-10" style="position:absolute;">&nbsp</span>
       <div class="fr-box fr-box-official fr-box-full dropdown-menu dropdown-menu-right" role="menu"><div class="fr-seal-block fr-seal-block-header"><div class="fr-seal-content"><h6>Official Content</h6></div></div><div class="content-block ">
         <ul>
           <li><a href="">View printed version (PDF)</a></li>
@@ -2284,6 +2292,7 @@
 </div><div class="fr-seal-block fr-seal-block-footer"><h6>Official Content</h6></div></div>    </li>
     <li class="public-inspection">
       <i class="icon-fr2 icon-fr2-doc-pi-pdf" role="button" data-toggle="dropdown"></i>
+      <span id="tour-11" style="position:absolute;">&nbsp</span>
       <div class="fr-box fr-box-public-inspection fr-box-full dropdown-menu dropdown-menu-right" role="menu"><div class="fr-seal-block fr-seal-block-header"><div class="fr-seal-content"><h6>Public Inspection</h6></div></div><div class="content-block ">
         <span class="icon-fr2 icon-fr2-stop-hand"></span>
         <div class="content">
@@ -2449,7 +2458,7 @@
       </div>
 </div><div class="fr-seal-block fr-seal-block-footer"><h6>
 Official Document</h6>
-<div id="tour-12" style="width:5%;right: 50px;position:absolute;">&nbsp</div>
+<div id="tour-14" style="width:5%;right: 50px;position:absolute;">&nbsp</div>
 </div></div>  </div>
 </div>
 
@@ -2511,7 +2520,7 @@ Official Document</h6>
 
     <div class="row">
   <div class="fr-box fr-box-small fr-box-enhanced"><div class="fr-seal-block fr-seal-block-header"><div class="fr-seal-content"><h6>Enhanced Content</h6>
-  <div id="tour-10" style="width: 60%;position:absolute;">&nbsp</div> 
+  <div id="tour-12" style="width: 60%;position:absolute;">&nbsp</div> 
   <div class="row fr-seal-meta"><div class="fr-seal-desc"><p>This box contains content about this document retrieved from Regulations.gov in order to provide you with more context for this document. The content in this box has not been published in the Federal Register and is only provided for your convenience.</p></div></div></div></div><div class="content-block ">
     <h4>Regulations.gov Docket Info</h4>
 
@@ -2527,7 +2536,7 @@ Official Document</h6>
 
 
         <dt>Public Comments:</dt>
-        <div id="tour-11" style="position:absolute;">&nbsp</div>
+        <div id="tour-13" style="position:absolute;">&nbsp</div>
         <dd>
           <a href="http://www.regulations.gov/#!docketBrowser;dct=PS;rpp=100;so=DESC;sb=docId;po=0;D=USTR-2014-0001" class="reg_gov_view_comments" target="_blank">0 comments</a>
           </dd>

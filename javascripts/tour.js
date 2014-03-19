@@ -67,21 +67,31 @@ var steps = {
     },
     {
       element: "#tour-9",
-      content: "Items that are not part of the published document, such as programatically generated table of contents and the regulatory timeline have been moved to a utility bar outside of the blue official document area.  This utility bar also contains tools to aid the reader in sharing with others, commenting, printing, etc.",
+      content: "Items that are not part of the published document have been moved to a utility bar outside of the blue official document area.  This utility bar also contains tools to aid the reader in sharing with others, commenting, printing, etc.",
       placement: "right"
     },
     {
       element: "#tour-10",
+      content: "location of PI text text text text text text text text",
+      placement: "right"
+    },
+    {
+      element: "#tour-11",
+      content: "location of PI text text text text text text text text",
+      placement: "right"
+    },
+    {
+      element: "#tour-12",
       content: "While denoting the type of content contained in a box, enhanced content headers will also reveal details about the source and purpose of the content in the box when a user hovers over the header.",
       placement: "top"
     },
     {
-      element: "#tour-11",
+      element: "#tour-13",
       content: "Content from other sources that provide context or provide additional details about a document are present in a green box rather than blue to make the distinction clear to the reader.",
       placement: "left"
     },
     {
-      element: "#tour-12",
+      element: "#tour-14",
       content: "Official Documents are enclosed with blue 'Official Document' blocks at top and bottom to clearly delineate where an official document begins and ends.",
       placement: "bottom"
     }
@@ -266,4 +276,11 @@ $(document).ready(function() {
     localStorage["tour_current_step"] = 0;
     tour.start(true).goTo(0);
   });
+
+  $("#tender").hide();
+});
+
+$(document).on('click', 'a:not(.toggle)', function(event) {
+    event.preventDefault()
+    alert("Links have been disabled for this demonstration.")
 });
