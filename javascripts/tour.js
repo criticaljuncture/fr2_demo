@@ -2,7 +2,7 @@ var steps = {
   home: [
     {
       element: "#tour-1",
-      content: "When a user places their mouse cursor over this link, it turns red and the preview area reveals itself.  This prevents confusion by only displaying documents on Public Inspection when a user interacts with this link.",
+      content: "When a user clicks this link, it turns red and the preview area reveals itself.  This prevents confusion by only displaying documents on Public Inspection when a user interacts with this link.",
       placement: "left",
       onNext: function(){
         $(".public-inspection-toggle").click();
@@ -114,17 +114,17 @@ var steps = {
     },
     {
       element: "#tour-6",
-      content: "Document metadata is published in a separate area in a similar pattern to how official documents are now presented but with colors reinforcing this document's status.  This header also includes a hover that gives more detail on the content contained.",
+      content: "Contains a permanent link to this page.  This allows us to automatically replace this page with the Official Version after its publication, ensuring that all publicly shared links to this document prior to publication bring the user to the published legal document.",
       placement: "top"
     },
     {
       element: "#tour-7",
-      content: "Publication date is now presented as a 'Scheduled Publication Date' to better represent the nature of the date included.",
-      placement: "left"
+      content: "Document metadata is published in a separate area in a similar pattern to how official documents are now presented but with colors reinforcing this document's status.  This header also includes a hover that gives more detail on the content contained.",
+      placement: "top"
     },
     {
       element: "#tour-8",
-      content: "Contains a permanent link to this page.  This allows us to automatically replace this page with the Official Version after its publication, ensuring that all publicly shared links to this document prior to publication bring the user to the published legal document.",
+      content: "Publication date is now presented as a 'Scheduled Publication Date' to better represent the nature of the date included.",
       placement: "left"
     },
     {

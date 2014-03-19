@@ -1,28 +1,33 @@
-.navbar.navbar-default {
+#navbar {
   background-color: #CCC;
+}
+
+#navbar .container-fixed {
+  margin: 0 auto;
   border-bottom: 3px solid #FFF;
-  height: 200px;
   padding-top: 10px;
 }
-.navbar.navbar-default .btn-wrapper {
-  margin: 0 auto;
-  width: 800px;
-  padding-bottom: 10px;
-}
-.navbar.navbar-default .description {
-  margin: 0 auto;
-  width: 800px;
 
+#tour-links {
+  padding-top: 20px;
+}
+
+#tour-links a {
+  padding: 0;
+  width: 100%;
+  text-align: left;
+}
+
+#navbar .description {
+  padding: 20px;
   line-height: 18px;
-  padding: 10px 5px;
-  border-top: 1px solid #AAA;
 }
-.navbar.navbar-default .btn {
-}
-.navbar.navbar-default .btn.current {
+
+#navbar .btn.current {
   cursor: default;
   color:#666;
 }
+
 .navbar.navbar-default .btn.start-tour {
   border-radius: 6px;
   border: 1px solid #015BA2;
