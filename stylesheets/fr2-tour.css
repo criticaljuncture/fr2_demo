@@ -10,15 +10,18 @@
 
 #tour-links {
   padding-top: 20px;
+  margin-bottom: 30px;
 }
 
 #tour-links li {
   list-style-type: none;
-  border-bottom: 1px solid black;
+  border-bottom: 1px solid #999;
   padding: 1px;
   width: 100%;
   text-align: left;
+  font-size: 14px;
 }
+#tour-links li:last-child { border-bottom: none; }
 
 #navbar .description {
   padding: 20px;
