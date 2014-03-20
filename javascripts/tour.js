@@ -5,12 +5,12 @@ var steps = {
       content: "When a user hovers over this link, it turns red indicating content is available. When a user clicks, the public inspection preview area reveals itself.  This prevents confusion by only displaying documents on Public Inspection when a user interacts with this link.",
       placement: "left",
       onShown: function(){
-        $("#pi-metadata-bar").children().mouseenter();
+        $(".public-inspection-toggle").addClass('hover');
       },
       onPrev: function(){ this.mouseOff() },
       onNext: function(){ this.mouseOff() },
       mouseOff: function(){
-        $("#pi-metadata-bar").children().mouseleave();
+        $(".public-inspection-toggle").removeClass('hover');
       }
     },
     {
@@ -264,7 +264,7 @@ var steps = {
   },
   {
     element: "#tour-10",
-    content: "The date is specifically labeled as the scheduled publication date, reinforcing the unpublished nature of these documents."
+    content: "The date is specifically labeled as the scheduled publication date, reinforcing the unpublished nature of these documents.",
     placement: "bottom"
   }],
   reader_aids: [
