@@ -163,8 +163,17 @@ var steps = {
     },
     {
       element: "#tour-6",
-      content: "Contains a permanent link to this page.  This allows us to automatically replace this page with the Official Version after its publication, ensuring that all publicly shared links to this document prior to publication bring the user to the published legal document.",
-      placement: "top"
+      content: "The utility navigation contains a shortened permanent link to this page useful for sharing.  This allows us to automatically replace this page with the Official Version after its publication, ensuring that all publicly shared links to this document prior to publication bring the user to the published legal document. This is also true if the user shares the longer url present in the browser url for this page.",
+      placement: "top",
+      onShown: function(){
+        $("#utility-nav-sharing").addClass("open").find('.fr-box').show();
+        $('#' + this.id).css('top', $('#' + this.id).position().top - 20 + 'px' );
+      },
+      closeBox: function(){
+        $("#utility-nav-sharing").removeClass("open").find(".fr-box").hide();
+      },
+      onNext: function(){this.closeBox()},
+      onPrev: function(){this.closeBox()}
     },
     {
       element: "#tour-7",
