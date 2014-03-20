@@ -254,6 +254,7 @@ var steps = {
   },
   {
     element: "#tour-10",
+    content: "The date is specifically labeled as the scheduled publication date, reinforcing the unpublished nature of these documents."
     placement: "bottom"
   }],
   reader_aids: [
