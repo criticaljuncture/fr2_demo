@@ -153,7 +153,7 @@ var steps = {
     },
     {
       element: "#tour-4",
-      content: "The document meta-data line now contains a reminder that the document is on Public Inspection and does not present a date to the user.",
+      content: "The document meta-data line now contains a reminder that the document is on Public Inspection and not yet published. Additionaly the date is specified as the scheduled publication date.",
       placement: "top"
     },
     {
