@@ -10,7 +10,10 @@ var steps = {
       content: "Consistent with treatment of Public Inspection elsewhere this preview area features a light pink background watermarked with the 'warning hand' icon as well as some description of Public Inspection.",
       placement: "bottom",
       onNext: function(){
-        $(".public-inspection-toggle").show();
+        $("#pi-metadata-bar").show();
+      },
+      onPrev: function(){
+        $("#pi-metadata-bar").hide();
       },
     },
     {
@@ -48,7 +51,16 @@ var steps = {
     {
       element: "#tour-5",
       content: "When a user places their mouse (hovers) over the blue Official Document header it will expand with a more detailed explanation of Official Document helping to further delineate what is an official document.",
-      placement: "top"
+      placement: "top",
+      onShown: function() {
+        $(this.element).siblings('.fr-seal-block.fr-seal-block-header').first().find('.fr-seal-content').addClass('hover');
+      },
+      onNext: function() {
+        $(this.element).siblings('.fr-seal-block.fr-seal-block-header').first().find('.fr-seal-content').removeClass('hover');
+      },
+      onPrev: function() {
+        $(this.element).siblings('.fr-seal-block.fr-seal-block-header').first().find('.fr-seal-content').removeClass('hover');
+      }
     },
     {
       element: "#tour-6",
@@ -71,6 +83,7 @@ var steps = {
       placement: "top",
       onShown: function(){
         $("#utility-nav-sharing").addClass("open").find('.fr-box').show();
+        $('#' + this.id).css('top', $('#' + this.id).position().top - 20 + 'px' );
       },
       closeBox: function(){
         $("#utility-nav-sharing").removeClass("open").find(".fr-box").hide();
@@ -84,6 +97,7 @@ var steps = {
       placement: "top",
       onShown: function(){
         $("#utility-nav-official").addClass("open").find('.fr-box').show();
+        $('#' + this.id).css('top', $('#' + this.id).position().top - 20 + 'px' );
       },
       closeBox: function(){
         $("#utility-nav-official").removeClass("open").find(".fr-box").hide();
@@ -97,6 +111,7 @@ var steps = {
       placement: "top",
       onShown: function(){
         $("#utility-nav-pi").addClass("open").find('.fr-box').show();
+        $('#' + this.id).css('top', $('#' + this.id).position().top - 20 + 'px' );
       },
       closeBox: function(){
         $("#utility-nav-pi").removeClass("open").find(".fr-box").hide();
