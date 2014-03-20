@@ -2,7 +2,7 @@ var steps = {
   home: [
     {
       element: "#tour-1",
-      content: "When a user clicks this link, it turns red and the preview area reveals itself.  This prevents confusion by only displaying documents on Public Inspection when a user interacts with this link.",
+      content: "When a user hovers over this link, it turns red indicating content is available. When a user clicks, the public inspection preview area reveals itself.  This prevents confusion by only displaying documents on Public Inspection when a user interacts with this link.",
       placement: "left"
     },
     {
@@ -30,7 +30,7 @@ var steps = {
   document: [
     {
       element: "#tour-1",
-      content: 'Header with with tagline "The Daily Journal of the United States" only used on pages containing official content.',
+      content: 'Header with with tagline "The Daily Journal of the United States Government" only used on pages containing official content.',
       placement: "bottom"
     },
     {
