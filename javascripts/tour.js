@@ -3,18 +3,28 @@ var steps = {
     {
       element: "#tour-1",
       content: "When a user hovers over this link, it turns red indicating content is available. When a user clicks, the public inspection preview area reveals itself.  This prevents confusion by only displaying documents on Public Inspection when a user interacts with this link.",
-      placement: "left"
+      placement: "left",
+      onShown: function(){
+        $("#pi-metadata-bar").children().mouseenter();
+      },
+      onPrev: function(){ this.mouseOff() },
+      onNext: function(){ this.mouseOff() },
+      mouseOff: function(){
+        $("#pi-metadata-bar").children().mouseleave();
+      }
     },
     {
       element: "#tour-2",
       content: "Consistent with treatment of Public Inspection elsewhere this preview area features a light pink background watermarked with the 'warning hand' icon as well as some description of Public Inspection.",
       placement: "bottom",
-      onNext: function(){
+      onShown: function(){
         $("#pi-metadata-bar").show();
       },
-      onPrev: function(){
+      hideBar: function(){
         $("#pi-metadata-bar").hide();
       },
+      onPrev: function(){ this.hideBar() },
+      onNext: function(){ this.hideBar() }
     },
     {
       element: "#tour-3",
