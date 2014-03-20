@@ -5,7 +5,7 @@ var steps = {
       content: "When a user clicks this link, it turns red and the preview area reveals itself.  This prevents confusion by only displaying documents on Public Inspection when a user interacts with this link.",
       placement: "left",
       onNext: function(){
-        $(".public-inspection-toggle").click();
+        $(".public-inspection-toggle").show();
       },
     },
     {
@@ -62,7 +62,7 @@ var steps = {
     },
     {
       element: "#tour-8",
-      content: "Official NARA seal is present as a water mark on the light blue background.  While light enough that it doesnt interfere with reading the document, it follows the content as the page is scrolled providing constant reinforcement that the text in the light blue area is official.",
+      content: "Official NARA seal is present as a water mark on the light blue background.  While light enough that it doesnt interfere with reading the document, it provides reinforcement that the text in the light blue area is official.",
       placement: "top"
     },
     {
@@ -72,12 +72,12 @@ var steps = {
     },
     {
       element: "#tour-10",
-      content: "location of PI text text text text text text text text",
+      content: "The utility bar item on the left provides access to the document as printed by GPO. This box features the same design treatment as other official documents.",
       placement: "right"
     },
     {
       element: "#tour-11",
-      content: "location of PI text text text text text text text text",
+      content: "The utility bar item on the left provides access to the document as it appeared on Public Inspection. This box features the same design treatment as other Public Inspection documents.",
       placement: "right"
     },
     {
