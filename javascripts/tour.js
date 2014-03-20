@@ -3,15 +3,15 @@ var steps = {
     {
       element: "#tour-1",
       content: "When a user clicks this link, it turns red and the preview area reveals itself.  This prevents confusion by only displaying documents on Public Inspection when a user interacts with this link.",
-      placement: "left",
-      onNext: function(){
-        $(".public-inspection-toggle").show();
-      },
+      placement: "left"
     },
     {
       element: "#tour-2",
       content: "Consistent with treatment of Public Inspection elsewhere this preview area features a light pink background watermarked with the 'warning hand' icon as well as some description of Public Inspection.",
       placement: "bottom",
+      onNext: function(){
+        $(".public-inspection-toggle").show();
+      },
     },
     {
       element: "#tour-3",
@@ -62,23 +62,47 @@ var steps = {
     },
     {
       element: "#tour-8",
-      content: "Official NARA seal is present as a water mark on the light blue background.  While light enough that it doesnt interfere with reading the document, it provides reinforcement that the text in the light blue area is official.",
+      content: "Official NARA seal is present as a water mark on the light blue background.  While light enough that it doesnt interfere with reading the document, it follows the content as the page is scrolled providing constant reinforcement that the text in the light blue area is official.",
       placement: "top"
     },
     {
       element: "#tour-9",
       content: "Items that are not part of the published document have been moved to a utility bar outside of the blue official document area.  This utility bar also contains tools to aid the reader in sharing with others, commenting, printing, etc.",
-      placement: "right"
+      placement: "top",
+      onShown: function(){
+        $("#utility-nav-sharing").addClass("open").find('.fr-box').show();
+      },
+      closeBox: function(){
+        $("#utility-nav-sharing").removeClass("open").find(".fr-box").hide();
+      },
+      onNext: function(){this.closeBox()},
+      onPrev: function(){this.closeBox()}
     },
     {
       element: "#tour-10",
       content: "The utility bar item on the left provides access to the document as printed by GPO. This box features the same design treatment as other official documents.",
-      placement: "right"
+      placement: "top",
+      onShown: function(){
+        $("#utility-nav-official").addClass("open").find('.fr-box').show();
+      },
+      closeBox: function(){
+        $("#utility-nav-official").removeClass("open").find(".fr-box").hide();
+      },
+      onNext: function(){this.closeBox()},
+      onPrev: function(){this.closeBox()}
     },
     {
       element: "#tour-11",
       content: "The utility bar item on the left provides access to the document as it appeared on Public Inspection. This box features the same design treatment as other Public Inspection documents.",
-      placement: "right"
+      placement: "top",
+      onShown: function(){
+        $("#utility-nav-pi").addClass("open").find('.fr-box').show();
+      },
+      closeBox: function(){
+        $("#utility-nav-pi").removeClass("open").find(".fr-box").hide();
+      },
+      onNext: function(){this.closeBox()},
+      onPrev: function(){this.closeBox()}
     },
     {
       element: "#tour-12",
@@ -206,7 +230,6 @@ var steps = {
   },
   {
     element: "#tour-10",
-    content: 'Publication date has been changed to now be "Schd. Pub. Date" to better represent the nature of Public Inspection Documents.',
     placement: "bottom"
   }],
   reader_aids: [

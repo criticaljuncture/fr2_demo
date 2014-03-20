@@ -28,7 +28,7 @@
   line-height: 18px;
 }
 
-#navbar .btn.current {
+#navbar .current {
   cursor: default;
   color:#666;
 }
