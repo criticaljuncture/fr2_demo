@@ -69,7 +69,7 @@ var steps = {
     },
     {
       element: "#tour-7",
-      content: "Meta-data about a document that was present in the official document is presented in a box with a similar blue color and encompassed in 'Document Detail' blocks at the top and bottom of the box.",
+      content: "Meta-data about this document is presented in a box with a similar blue color and encompassed in 'Document Detail' blocks at the top and bottom of the box.",
       placement: "top"
     },
     {
