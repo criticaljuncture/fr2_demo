@@ -201,12 +201,12 @@ var steps = {
   },
   {
     element: "#tour-9",
-    content: "The table of contents for the documents on Public Inspection for this date is presented in red/pink to reinforce its relation to the content on this page and the status of the content it links to.  This table of contents block will scroll with the user as they move down the page not only providing increased ease of use but also a persistent reminder of the status of the content being viewed.",
+    content: "The table of contents for the documents on Public Inspection for this date is presented in red/pink to reinforce its relation to the content on this page and the status of the content it links to.",
     placement: "top"
   },
   {
     element: "#tour-10",
-    content: 'Publication date has been changed to now be "Scheduled Pub. Date" to better represent the nature of Public Inspection Documents.',
+    content: 'Publication date has been changed to now be "Schd. Pub. Date" to better represent the nature of Public Inspection Documents.',
     placement: "bottom"
   }],
   reader_aids: [
